@@ -1,0 +1,42 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "assumed_car_speed_kmh": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "maximum": 200,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Assumed Car Speed Kmh"
+    },
+    "commute_tolerance_fraction": {
+      "default": 0.15,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Commute Tolerance Fraction",
+      "type": "number"
+    },
+    "work_half_score_distance_m": {
+      "default": 5000,
+      "exclusiveMinimum": 0,
+      "title": "Work Half Score Distance M",
+      "type": "number"
+    },
+    "half_score_distances_m": {
+      "additionalProperties": {
+        "exclusiveMinimum": 0,
+        "type": "number"
+      },
+      "title": "Half Score Distances M",
+      "type": "object"
+    }
+  },
+  "title": "ScoringConfig",
+  "type": "object"
+}

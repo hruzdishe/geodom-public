@@ -1,0 +1,1220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{font-family:Manrope,Arial,sans-serif;color:#11213f;background:#f3f7fb;font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px}button,input,select,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.app{min-height:100vh;display:flex;flex-direction:column}main{flex:1}.shell{width:min(1550px,calc(100% - 48px));margin:0 auto}.site-header{height:83px;background:#fff;border-bottom:1px solid #e4eaf2;position:relative;z-index:100}.header-inner{height:100%;display:flex;align-items:center;gap:42px}.brand{display:flex;align-items:center;gap:12px;min-width:220px}.brand-symbol{display:grid;place-items:center;width:45px;height:45px;border-radius:12px;background:#1abb78;color:#fff;font-size:28px;font-weight:800;line-height:1;position:relative}.brand-symbol svg{color:#fff}.brand-name{font-size:24px;font-weight:800;line-height:1;letter-spacing:-1.2px}.brand-label{display:block;font-size:9px;font-weight:700;color:#8b9bb2;letter-spacing:0;margin-top:5px}.desktop-nav{display:flex;align-items:center;gap:13px;flex:1;height:100%}.desktop-nav a{font-size:13px;font-weight:800;padding:12px 18px;border-radius:8px;white-space:nowrap}.desktop-nav a.active{color:#176ef4;background:#edf4ff}.desktop-nav a:hover{color:#176ef4}.header-actions{display:flex;align-items:center;gap:15px}.post-link{display:flex;align-items:center;gap:8px;background:#f2f7fd;border:1px solid #e6edf6;padding:11px 15px;border-radius:9px;font-size:12px;font-weight:800;color:#2e496d}.post-link:hover{background:#e8f2ff}.account-link{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800}.user-dot{display:grid;place-items:center;background:#e8f2ff;color:#176ef4;width:30px;height:30px;border-radius:50%}.mobile-menu,.mobile-panel{display:none}.demo-banner{background:#eaf4ff;border-bottom:1px solid #d7e9fa;color:#527196;font-size:10px;font-weight:800;letter-spacing:.4px;padding:8px 0}.demo-banner .shell{display:block}.demo-banner span span{padding:0 8px;color:#87a5c5}.dashboard-page{padding:14px 0 54px;background:radial-gradient(circle at 79% 8%,#e1f3ff 0,transparent 28%),#f3f7fb}.dashboard-grid{display:grid;grid-template-columns:265px minmax(0,1fr);gap:16px;align-items:start}.dashboard-sidebar{background:#fff;border:1px solid #e6ecf4;border-radius:11px;padding:22px 17px 26px;box-shadow:0 5px 24px #2b5c9a08;position:sticky;top:16px}.sidebar-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.sidebar-heading h2{font-size:16px;margin:0;letter-spacing:-.4px}.sidebar-heading button{border:0;background:none;color:#1671ed;font-size:11px;font-weight:800}.sidebar-block{margin-bottom:22px}.sidebar-label{display:block;font-size:12px;font-weight:800;margin-bottom:10px}.sidebar-label.inline{margin-top:17px}.segmented{display:grid;grid-template-columns:1fr 1fr;background:#eff4f9;padding:3px;border-radius:8px;font-size:11px;font-weight:800;text-align:center;color:#68809e}.segmented span{padding:9px 3px}.segmented .active{background:#1977f6;border-radius:6px;color:white;box-shadow:0 3px 8px #257df12b}.dashboard-sidebar select,.form-field select{appearance:none;background:#f7f9fc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%238599b1' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center}.dashboard-sidebar select{width:100%;border:1px solid #e1e9f2;border-radius:8px;height:41px;padding:0 12px;color:#293e5c;font-size:11px;font-weight:700}.room-options{display:flex;gap:7px}.room-options button{flex:1;background:#f7faff;border:1px solid #e3eaf4;border-radius:7px;height:38px;font-size:11px;font-weight:800;color:#697f9b}.room-options button.selected{background:#e9f2ff;border-color:#3185ff;color:#166ff3}.priority-block{border-top:1px solid #e9eef5;padding-top:22px;margin-top:24px}.priority-block p{font-size:10px;color:#8a9bb0;line-height:1.55;margin:-3px 0 12px}.priority-list{display:grid;gap:7px}.priority-list span{font-size:10px;font-weight:700;display:flex;align-items:center;gap:9px;color:#334b70}.priority-list svg{background:#2787f5;color:white;border-radius:4px;padding:2px;width:17px;height:17px}.sidebar-apply{display:flex;justify-content:center;align-items:center;gap:9px;width:100%;height:42px;background:#1878f4;border:0;color:#fff;border-radius:7px;font-size:11px;font-weight:800;box-shadow:0 5px 10px #126de52b}.sidebar-apply:hover{background:#0967e3}.sidebar-reset{display:flex;align-items:center;gap:7px;background:none;border:0;color:#49749f;font-size:10px;margin:15px auto 0}.mobile-only-close{display:none}.dashboard-main{min-width:0}.dashboard-intro{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:118px;padding:7px 4px 13px}.dashboard-kicker{font-size:9px;font-weight:800;letter-spacing:1.4px;color:#207ce8}.dashboard-intro h1{font-size:clamp(24px,2.6vw,38px);line-height:1.2;letter-spacing:-1.4px;margin:7px 0;color:#132547}.dashboard-intro h1 em{font-style:normal;color:#1977ee}.dashboard-intro p{font-size:12px;line-height:1.7;color:#69809e;max-width:700px;margin:0}.intro-badge{display:flex;align-items:center;gap:11px;background:#fff;padding:13px;border-radius:10px;box-shadow:0 6px 22px #2269af14;min-width:190px}.intro-badge-icon{width:38px;height:38px;display:grid;place-items:center;color:#08a462;background:#e9fbf1;border-radius:8px}.intro-badge b,.intro-badge small{display:block}.intro-badge b{font-size:11px}.intro-badge small{font-size:9px;color:#8799b1;margin-top:3px}.intro-badge>svg{color:#1fb276;margin-left:auto}.dashboard-search{height:48px;background:#fff;border:1px solid #e3eaf4;border-radius:9px;display:flex;align-items:center;gap:10px;padding:5px 6px 5px 15px;margin:2px 0 10px;box-shadow:0 4px 15px #2c60a00a}.dashboard-search>svg{color:#95a7bd}.dashboard-search input{flex:1;min-width:0;border:0;outline:0;font-size:12px;color:#243953}.dashboard-search input::placeholder{color:#9ba9bb}.dashboard-search button{height:36px;background:#1978f5;color:white;border:0;border-radius:6px;display:flex;align-items:center;gap:8px;padding:0 15px;font-size:11px;font-weight:800}.map-panel{background:#fff;padding:9px;border:1px solid #e5ebf3;border-radius:11px;box-shadow:0 5px 22px #2f69ac0b}.map-topbar{height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 6px}.map-topbar>div{display:flex;gap:6px;align-items:center}.map-tab{display:flex;align-items:center;gap:6px;border-radius:6px;padding:8px 10px;color:#647991;font-size:11px;font-weight:700}.map-tab.active{background:#e7f1ff;color:#0a6ff1}.map-topbar-note{font-size:10px;color:#6a819b;font-weight:700}.pulse-dot{width:7px;height:7px;border-radius:50%;background:#25b578;box-shadow:0 0 0 4px #def8ea}.map-wrapper{height:385px;position:relative;overflow:hidden;border-radius:8px;background:#d9ebea}.map-canvas{width:100%;height:100%;z-index:1}.leaflet-container{font-family:Manrope,Arial,sans-serif!important}.leaflet-popup-content{font-size:11px;line-height:1.8}.leaflet-popup-content a{color:#1778ed;font-weight:800}.map-price-pin{display:inline-flex;align-items:center;justify-content:center;min-width:83px;height:28px;padding:0 8px;background:#fff;color:#146ae0;border:2px solid #2e84f4;box-shadow:0 3px 12px #193e7944;border-radius:18px;font-size:10px;font-weight:800;white-space:nowrap}.map-price-pin.muted{opacity:.35}.map-pin-container,.district-pin-container{background:none;border:0}.district-map-pin{min-width:103px;display:grid;justify-items:center;gap:3px;background:#09a66b;color:#fff;padding:7px 10px;border-radius:9px;box-shadow:0 6px 15px #0f644d50;font-size:10px;font-weight:800;white-space:nowrap}.district-map-pin b{font-size:17px}.district-map-pin.active{background:#087c51;outline:3px solid #b9eed8}.map-legend{position:absolute;right:14px;top:14px;z-index:400;background:white;box-shadow:0 5px 17px #12427735;border-radius:8px;padding:10px 13px;display:grid;gap:7px;font-size:10px;font-weight:700}.map-legend span{display:flex;align-items:center;gap:7px}.legend-dot{width:9px;height:9px;border-radius:50%}.legend-dot.blue{background:#2d82f5}.legend-dot.green{background:#0da86b}.map-caption{padding:8px 5px 2px;color:#8293a8;font-size:9px;display:flex;align-items:center;gap:5px}.map-caption span{margin-left:auto}.dashboard-section-title{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:20px 3px 12px}.dashboard-section-title h2{font-size:19px;letter-spacing:-.6px;margin:0 0 4px}.dashboard-section-title h2 span{color:#1877eb}.dashboard-section-title p{color:#8093aa;font-size:10px;margin:0}.mini-label{font-size:9px;letter-spacing:.8px;font-weight:800;color:#82a2c4;white-space:nowrap}.district-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.district-card{background:#fff;border:1px solid #e4eaf3;border-radius:10px;text-align:left;padding:7px;min-width:0;box-shadow:0 4px 16px #2a65a70a;transition:transform .2s,box-shadow .2s,border-color .2s}.district-card:hover,.district-card.chosen{border-color:#5aa1fb;transform:translateY(-2px);box-shadow:0 8px 26px #2165b51a}.district-image{height:91px;border-radius:6px;overflow:hidden;background:linear-gradient(135deg,#9cd3ea,#b0c1d8);position:relative}.district-image img{width:100%;height:100%;object-fit:cover}.district-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0d2d5044,transparent)}.district-image span{position:absolute;right:6px;top:6px;z-index:1;background:#18b56b;color:white;border-radius:5px;padding:5px 7px;font-size:9px;font-weight:800}.district-card:nth-child(n+2) .district-image span{background:#ffffffed;color:#375278}.district-card-head{display:flex;justify-content:space-between;align-items:center;gap:4px;margin:9px 5px 3px}.district-card-head h3{font-size:13px;margin:0}.district-card-head b{display:flex;align-items:center;gap:3px;color:#153055;font-size:13px}.district-card-head b svg{color:#f5ad19}.district-card-head small{font-size:10px;color:#91a2b6}.district-card>p{font-size:10px;line-height:1.55;color:#667c98;margin:3px 5px;height:31px;overflow:hidden}.district-card-bottom{margin-top:11px;background:#eaf4ff;color:#1677ed;border-radius:6px;padding:8px;display:flex;justify-content:center;align-items:center;gap:9px;font-size:10px;font-weight:800}.listings-section{scroll-margin-top:25px}.listings-title{margin-top:25px}.listings-actions{display:flex;align-items:center;gap:7px;color:#7a8fa7;font-size:10px}.select-wrap{position:relative}.select-wrap select{appearance:none;border:1px solid #dfe8f2;background:#fff;border-radius:7px;padding:8px 27px 8px 10px;color:#275071;font-size:10px;font-weight:800}.select-wrap svg{position:absolute;right:8px;top:8px;pointer-events:none}.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.home-card{position:relative;background:#fff;border:1px solid #e2eaf3;border-radius:10px;overflow:hidden;box-shadow:0 4px 17px #174e8d0a;min-width:0;transition:transform .2s,box-shadow .2s;animation:rise .45s both}.home-card-link{display:block;color:inherit}.home-card:hover{transform:translateY(-4px);box-shadow:0 14px 27px #1e5ba41d}.home-card-image{height:158px;position:relative;background:#d9e7f4;overflow:hidden}.home-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.home-card:hover img{transform:scale(1.05)}.image-placeholder{width:100%;height:100%;display:grid;place-items:center;background:linear-gradient(135deg,#d4e5f3,#95bcdf);color:#4781b2;font-size:30px;font-weight:800;letter-spacing:4px}.photo-count{position:absolute;left:10px;bottom:10px;background:#122845bb;color:#fff;border-radius:5px;padding:5px 8px;font-size:9px;letter-spacing:1px;font-weight:800}.card-like{position:absolute;right:9px;top:9px;z-index:5;border:0;border-radius:50%;width:31px;height:31px;display:grid;place-items:center;background:#ffffffed;color:#3d5d7b;box-shadow:0 3px 10px #173d6720;transition:transform .15s,color .15s,background .15s}.card-like:hover{transform:scale(1.07)}.card-like.saved{background:#edf5ff;color:#176ff0}.home-card-info{padding:12px}.card-price{display:flex;align-items:center;justify-content:space-between;font-size:16px;font-weight:800;letter-spacing:-.4px}.card-price svg{color:#2380f3}.home-card h3{font-size:11px;margin:6px 0;font-weight:800}.card-address{display:flex;align-items:center;gap:4px;font-size:9px;color:#788da6;min-height:26px}.card-address svg{flex:none}.card-bottom{display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid #edf2f7;padding-top:10px;margin-top:8px;font-size:9px;font-weight:700;color:#425a79}.card-bottom span+span:before{content:'·';margin-right:8px;color:#8da1b7}.card-match{display:flex;align-items:center;gap:5px;background:#e9f8f1;color:#088650;padding:7px 8px;margin-top:10px;border-radius:5px;font-size:9px;font-weight:800}.card-match small{margin-left:auto;color:#5eab88}.dashboard-end{margin-top:17px;border-radius:9px;background:#e3f0ff;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;color:#246dab;font-size:10px;font-weight:800}.dashboard-end span,.dashboard-end a{display:flex;align-items:center;gap:8px}.dashboard-end a{color:#1674ed}.mobile-filter-button{display:none}.page-loading{min-height:180px;display:flex;align-items:center;justify-content:center;gap:11px;color:#6886a7;font-size:13px}.spinner{width:24px;height:24px;border:3px solid #d4e6fb;border-top-color:#227cf1;border-radius:50%;animation:spin .8s linear infinite}.empty-state{background:#fff;text-align:center;padding:48px 20px;border:1px solid #e6edf4;border-radius:10px}.empty-mark{display:block;font-size:34px;color:#2e86f3}.empty-state h2{font-size:20px}.empty-state p{font-size:12px;color:#7287a0}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;border-radius:7px;border:0;padding:0 18px;font-size:12px;font-weight:800}.button.dark{background:#1778f2;color:white}.button.dark:hover{background:#0869e5}.button.light{background:#fff;color:#145fbf}.button:disabled{opacity:.65;cursor:wait}.site-footer{background:#13243c;color:#c9d5e3;padding:32px 0}.footer-inner{display:flex;justify-content:space-between;gap:35px}.footer-brand{font-size:26px;font-weight:800;color:#fff;letter-spacing:-1px}.footer-brand span{color:#33d78a}.footer-inner p{font-size:10px;line-height:1.7;color:#9aadc3;margin:6px 0 0}.footer-right{text-align:right;max-width:370px}.footer-right>span{font-size:9px;letter-spacing:1.3px;font-weight:800}.not-found{text-align:center;padding:90px 0}.not-found span{font-size:80px;color:#207df5;font-weight:800}.not-found h1{font-size:30px}.eyebrow{display:flex;align-items:center;gap:9px;color:#287bf0;font-size:10px;letter-spacing:1.5px;font-weight:800}.eyebrow.light{color:#84b7fa}.eyebrow-line{width:22px;height:1px;background:currentColor}.back-link{display:inline-flex;align-items:center;gap:8px;color:#5b7592;font-size:12px;font-weight:800}.back-link:hover{color:#1877ed}.detail-page{padding:22px 0 55px}.detail-top{display:flex;justify-content:space-between;align-items:center}.detail-top-right{display:flex;align-items:center;gap:22px;color:#93a3b6;font-size:10px;font-weight:800;letter-spacing:.6px}.share-button{border:0;background:none;display:flex;align-items:center;gap:7px;color:#3e668c;font-weight:800;font-size:11px}.detail-heading{display:flex;justify-content:space-between;gap:25px;align-items:end;margin:26px 0}.detail-heading h1{font-size:clamp(27px,3.4vw,48px);letter-spacing:-1.7px;line-height:1.17;margin:11px 0 12px}.detail-heading p{display:flex;align-items:center;gap:6px;color:#7086a0;font-size:13px;margin:0}.detail-heading-price{text-align:right;white-space:nowrap}.detail-heading-price span,.detail-heading-price small{display:block;font-size:10px;color:#8ba0b6;font-weight:800}.detail-heading-price b{display:block;font-size:28px;letter-spacing:-.8px;margin:5px 0}.detail-heading-price small{font-weight:600}.gallery{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:10px;height:430px}.gallery-main,.gallery-thumbs{min-height:0}.gallery-main{position:relative;overflow:hidden;background:#deebf5;border-radius:11px}.gallery-main>img{width:100%;height:100%;object-fit:cover}.gallery-thumbs{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:10px}.gallery-thumbs button{padding:0;border:0;border-radius:9px;overflow:hidden;opacity:.75;outline:2px solid transparent}.gallery-thumbs button.active{opacity:1;outline-color:#2d85f8}.gallery-thumbs img{width:100%;height:100%;object-fit:cover}.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);border:0;background:#fff;color:#193650;border-radius:50%;width:36px;height:36px;display:grid;place-items:center}.gallery-arrow.previous{left:15px}.gallery-arrow.next{right:15px}.gallery-counter{position:absolute;bottom:17px;left:18px;background:#102b4ec4;color:white;border-radius:6px;padding:7px 10px;font-size:11px;font-weight:800;letter-spacing:1px}.detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:30px;align-items:start;margin-top:35px}.detail-content{background:#fff;border:1px solid #e6edf5;border-radius:10px;padding:0 30px}.detail-section{padding:31px 0;border-bottom:1px solid #e7edf4}.detail-section:last-child{border-bottom:0}.section-kicker{color:#3285ec;font-size:10px;letter-spacing:1.2px;font-weight:800}.detail-section h2{font-size:25px;letter-spacing:-.7px;margin:10px 0 19px}.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.spec-grid>div{background:#f4f8fc;border-radius:8px;padding:18px 12px}.spec-grid b,.spec-grid span{display:block}.spec-grid b{font-size:19px}.spec-grid span{font-size:10px;color:#8498ae;margin-top:4px}.description,.section-intro{color:#586e86;line-height:1.8;font-size:12px}.description{margin:20px 0}.secondary-specs{display:flex;gap:17px;flex-wrap:wrap}.secondary-specs span{font-size:10px;color:#91a3b6}.secondary-specs b{display:block;color:#2d4865;font-size:12px;margin-top:4px}.infra-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0}.infra-grid>div{border:1px solid #e6edf5;border-radius:8px;padding:14px 11px}.infra-grid svg{display:block;color:#2280ed;width:22px;height:22px}.infra-grid b{display:block;font-size:19px;margin:9px 0 2px}.infra-grid span{display:block;color:#8196ae;font-size:9px;line-height:1.4}.distance-list>div{display:flex;justify-content:space-between;border-bottom:1px solid #eef2f7;padding:10px 0;font-size:11px;color:#70869e}.distance-list b{color:#234468}.map-link{margin-top:19px;display:flex;align-items:center;gap:9px;color:#1975e8;font-size:12px;font-weight:800}.map-link svg:last-child{margin-left:auto}.projects-list{display:grid;gap:10px}.project{display:flex;gap:13px;border:1px solid #e4ecf5;border-radius:9px;padding:15px}.project-icon{flex:none;width:37px;height:37px;display:grid;place-items:center;border-radius:8px;color:#1779ed;background:#eaf3ff}.project-meta{font-size:9px;color:#2f7bd3;font-weight:800}.project h3{font-size:13px;margin:4px 0}.project p{font-size:10px;color:#788ca4;line-height:1.6;margin:0 0 8px}.project small{font-size:9px;color:#8fa1b5}.project small a{color:#1875e7;text-decoration:underline}.info-note{background:#eff6fe;color:#6b86a2;padding:18px;border-radius:8px;font-size:12px}.detail-aside{position:sticky;top:18px}.score-panel{background:#fff;border:1px solid #e1eaf4;border-radius:10px;padding:22px;box-shadow:0 6px 20px #1d66ad0e}.panel-eyebrow{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:800;color:#2481e9;letter-spacing:.6px}.score-main{display:flex;align-items:baseline;gap:5px;margin:15px 0 8px}.score-main b{font-size:58px;line-height:1;letter-spacing:-3px}.score-main span{font-size:15px;color:#a0b0c0;font-weight:800}.score-track{height:8px;background:#e6eef7;border-radius:10px;overflow:hidden}.score-track span{height:100%;display:block;background:linear-gradient(90deg,#2b8cf9,#23ca8f);border-radius:10px}.score-panel p{font-size:11px;font-weight:800;margin:23px 0 10px}.score-panel ul{padding:0;margin:0 0 18px;list-style:none;display:grid;gap:10px}.score-panel li{display:flex;align-items:center;gap:8px;font-size:10px;color:#506987}.score-panel li svg{color:#10ae71;flex:none}.score-foot{border-top:1px solid #e9eff5;padding-top:12px;font-size:9px;color:#9aabc0}.score-warning{display:block;color:#728ba4;line-height:1.5;margin-top:9px;font-size:9px}.aside-note{margin-top:12px;padding:23px;background:#1679ee;color:#fff;border-radius:10px}.aside-note span{font-size:9px;font-weight:800;letter-spacing:1px;color:#bcd9ff}.aside-note h3{font-size:18px;line-height:1.3}.aside-note p{font-size:11px;line-height:1.7;color:#d4e7ff}.aside-note .button{width:100%;font-size:10px}.demo-disclaimer{font-size:10px;color:#8a9eb4;margin-top:28px}.detail-loading{padding:50px 0}.auth-page{display:grid;grid-template-columns:46% 54%;min-height:calc(100vh - 83px)}.auth-image{background:linear-gradient(0deg,#091c38c9,#1439587a),url('/images/photo-1600210492486-724fe5c67fb0.jpg') center/cover;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:42px;color:white}.auth-back{display:flex;gap:9px;align-items:center;font-size:12px;font-weight:800}.auth-image-content{padding-bottom:40px}.auth-image-content span{font-size:10px;letter-spacing:1.6px;font-weight:800;color:#b8d8fa}.auth-image-content h2{font-size:clamp(34px,4vw,60px);line-height:1.13;letter-spacing:-1.7px}.auth-image-content h2 em{color:#79e5b4;font-style:normal}.auth-image-content p{font-size:13px;color:#dcecff}.auth-form-side{display:grid;place-items:center;background:#fff;padding:35px}.auth-form-wrap{width:min(410px,100%)}.auth-form-wrap h1{font-size:34px;letter-spacing:-1.1px;margin:12px 0 8px}.auth-form-wrap>p{color:#7187a1;font-size:12px;margin-bottom:33px}.auth-form-wrap form>label{display:block;font-size:11px;font-weight:800;margin:18px 0 8px}.input-with-icon{height:49px;border:1px solid #dce6f0;background:#f8fafc;border-radius:7px;display:flex;align-items:center;gap:11px;padding:0 14px;color:#8da3b9}.input-with-icon:focus-within{border-color:#3e93f4}.input-with-icon input{min-width:0;flex:1;border:0;background:none;outline:none;font-size:12px;color:#1b3452}.input-with-icon button{border:0;background:transparent;color:#8197af;padding:0}.auth-submit{margin-top:23px;width:100%;height:49px;justify-content:space-between}.auth-switch{text-align:center;margin-top:24px;font-size:11px;color:#7c90a5}.auth-switch a{color:#1678ed;font-weight:800}.auth-demo-note{margin-top:30px!important;background:#edf6ff;border-radius:7px;padding:12px;color:#66819d!important;font-size:10px!important;line-height:1.5}.form-error{background:#fff0ee;border:1px solid #ffd2ce;border-radius:7px;color:#b83b37;padding:12px 15px;font-size:11px;font-weight:700;margin:16px 0}.account-page,.form-page{padding-top:30px;padding-bottom:60px}.account-hero{display:flex;align-items:center;justify-content:space-between;border-radius:12px;background:linear-gradient(110deg,#12355f,#1977e7);color:white;padding:35px 40px;min-height:180px}.account-hero h1{font-size:31px;letter-spacing:-1px;margin:14px 0 6px}.account-hero h1 em{color:#87eabe;font-style:normal}.account-hero p{font-size:12px;color:#c6def9}.account-avatar{width:90px;height:90px;border-radius:50%;background:#ffffff2a;display:grid;place-items:center;font-size:43px;font-weight:800;border:1px solid #ffffff55}.account-heading{display:flex;justify-content:space-between;align-items:end;margin:35px 0 18px}.account-heading h2{font-size:23px;margin:10px 0 0}.account-heading small{color:#9fb1c2;font-size:15px;margin-left:6px}.account-list{display:grid;gap:10px}.account-item{background:#fff;border:1px solid #e4ebf4;border-radius:10px;padding:12px;display:flex;gap:18px;align-items:center}.account-item-image{width:155px;height:110px;border-radius:7px;background:#e4eef7;display:grid;place-items:center;color:#8daac8;overflow:hidden;flex:none}.account-item-image img{width:100%;height:100%;object-fit:cover}.account-item-copy{flex:1}.status{display:inline-block;font-size:9px;font-weight:800;border-radius:4px;padding:5px 8px;background:#eaf8f0;color:#0ca369}.status-hidden{background:#f2f4f6;color:#8b99a6}.account-item h3{font-size:14px;margin:7px 0 4px}.account-item p{font-size:10px;color:#8295aa;margin:0 0 8px}.account-item b{font-size:15px}.account-item-actions{display:grid;gap:5px;min-width:95px}.small-action{display:flex;gap:7px;align-items:center;font-size:10px;font-weight:800;color:#2978d4;border:0;background:none;padding:4px 0;text-align:left}.small-action.danger{color:#9b5a5a}.logout{margin-top:28px;border:0;background:none;color:#7b91a8;display:flex;gap:8px;align-items:center;font-size:11px;font-weight:800}.form-page>.back-link{margin-bottom:20px}.form-heading{margin:12px 0 28px}.form-heading h1{font-size:38px;letter-spacing:-1.4px;margin:10px 0}.form-heading h1 em{font-style:normal;color:#237de7}.form-heading p{max-width:630px;color:#7289a2;line-height:1.7;font-size:12px}.listing-form{display:grid;grid-template-columns:minmax(0,1fr) 270px;align-items:start;gap:18px}.form-main{display:grid;gap:13px}.form-section{background:#fff;border:1px solid #e4ecf5;border-radius:10px;padding:25px}.form-section-head{display:flex;gap:15px;align-items:start;margin-bottom:21px}.form-section-head>span{width:35px;height:35px;flex:none;border-radius:7px;background:#eaf3ff;color:#1876ed;display:grid;place-items:center;font-size:13px;font-weight:800}.form-section-head h2{font-size:17px;margin:0 0 5px}.form-section-head p{color:#91a3b7;font-size:10px;margin:0}.form-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.form-field.full{grid-column:1/-1}.form-field label{display:block;font-size:11px;font-weight:800;margin-bottom:8px}.form-field input,.form-field select,.form-field textarea{width:100%;border:1px solid #dce6f0;background:#f9fbfd;border-radius:7px;padding:11px 12px;outline:none;color:#243a55;font-size:11px}.form-field input:focus,.form-field textarea:focus,.form-field select:focus{border-color:#3b91f3}.form-field textarea{resize:vertical;min-height:110px}.form-field small{display:flex;align-items:center;gap:6px;font-size:9px;color:#8fa1b6;margin-top:6px}.upload-zone{border:1px dashed #9fc6f2;background:#f6faff;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;min-height:150px;color:#1d79e7;cursor:pointer}.upload-zone b{font-size:11px}.upload-zone span{font-size:9px;color:#94a8bb}.upload-zone input{display:none}.selected-photos{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}.selected-photos>div{width:85px;height:70px;position:relative;border-radius:6px;overflow:hidden;background:#e4edf7}.selected-photos img{width:100%;height:100%;object-fit:cover}.selected-photos button{position:absolute;right:4px;top:4px;border:0;background:#fff;border-radius:50%;width:20px;height:20px;display:grid;place-items:center;padding:0}.selected-photos span{position:absolute;bottom:0;left:0;right:0;background:#1b365bbb;color:white;text-align:center;font-size:8px}.form-submit-row{display:flex;align-items:center;gap:16px}.form-submit-row span{display:flex;align-items:center;gap:6px;color:#8399af;font-size:10px}.form-submit-row span svg{color:#13ad73}.form-tip{position:sticky;top:20px;background:#e8f3ff;border:1px solid #d5e9ff;border-radius:10px;padding:21px}.form-tip span{font-size:9px;letter-spacing:1px;font-weight:800;color:#2b80e8}.form-tip h3{font-size:16px;line-height:1.35;margin:12px 0}.form-tip p{font-size:10px;line-height:1.7;color:#637f9d}.tip-line{height:1px;background:#cddff2;margin:17px 0}@keyframes spin{to{transform:rotate(360deg)}}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1150px){.shell{width:min(100% - 32px,1550px)}.dashboard-grid{grid-template-columns:230px minmax(0,1fr)}.dashboard-sidebar{padding:18px 13px}.desktop-nav{gap:0}.desktop-nav a{padding:10px}.post-link{display:none}.dashboard-intro h1{font-size:28px}.intro-badge{display:none}.map-wrapper{height:330px}.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{height:350px}}
+@media(max-width:760px){.site-header{height:64px}.header-inner{gap:10px}.brand{min-width:0;flex:1}.brand-symbol{width:37px;height:37px;font-size:23px}.brand-name{font-size:20px}.desktop-nav,.header-actions{display:none}.mobile-menu{display:grid;place-items:center;border:0;background:#edf5ff;color:#1778ed;border-radius:7px;width:37px;height:37px}.mobile-panel{display:grid;position:absolute;z-index:110;top:64px;left:0;right:0;background:white;box-shadow:0 14px 22px #194e8d24;padding:14px 22px;gap:2px}.mobile-panel a{padding:12px;border-bottom:1px solid #eaf0f6;font-size:13px;font-weight:800}.demo-banner{font-size:9px;line-height:1.4}.dashboard-grid{display:block}.dashboard-sidebar{display:none;position:fixed;inset:0 15% 0 0;z-index:1000;overflow-y:auto;border-radius:0;box-shadow:0 0 0 100vw #071b39a0;padding:24px;max-width:330px}.dashboard-sidebar.open{display:block}.mobile-only-close{display:block!important}.dashboard-intro{min-height:0;padding:15px 0 10px}.dashboard-intro h1{font-size:26px;margin:7px 0}.dashboard-intro p{font-size:11px}.dashboard-search{margin-bottom:10px}.map-wrapper{height:330px}.map-caption span{display:none}.district-cards{gap:8px}.district-card-head{display:block}.district-card-head b{margin-top:4px}.district-image{height:75px}.district-card>p{display:none}.district-card-bottom{font-size:9px}.mobile-filter-button{display:flex;align-items:center;gap:5px;border:1px solid #dfe9f5;background:#fff;border-radius:7px;padding:8px;color:#1e72d4;font-size:10px;font-weight:800}.mobile-filter-button b{background:#197af3;color:white;border-radius:50%;width:15px;height:15px;display:grid;place-items:center;font-size:9px}.listings-actions label{display:none}.detail-heading{align-items:start}.detail-heading h1{font-size:30px}.detail-heading-price b{font-size:20px}.gallery{height:340px}.detail-layout{grid-template-columns:1fr}.detail-aside{position:static;display:grid;grid-template-columns:1fr 1fr;gap:12px}.aside-note{margin-top:0}.auth-page{grid-template-columns:1fr;min-height:calc(100vh - 64px)}.auth-image{display:none}.auth-form-side{padding:45px 25px}.listing-form{grid-template-columns:1fr}.form-aside{display:none}}
+@media(max-width:520px){.shell{width:calc(100% - 24px)}.dashboard-page{padding-top:0}.dashboard-intro h1{font-size:23px;letter-spacing:-.7px}.dashboard-intro p{font-size:10px}.dashboard-search input{font-size:11px}.dashboard-search button{padding:0 10px}.map-wrapper{height:300px}.map-topbar-note,.map-tab.secondary{display:none}.map-caption{font-size:8px}.dashboard-section-title h2{font-size:17px}.mini-label{display:none}.district-cards{grid-template-columns:1fr;gap:8px}.district-card{display:grid;grid-template-columns:95px 1fr;column-gap:10px;align-items:center}.district-image{height:72px;grid-row:span 2}.district-image span{display:none}.district-card-head{margin:0}.district-card-head h3{font-size:13px}.district-card>p{display:block;height:auto;margin:0;font-size:9px;grid-column:2}.district-card-bottom{grid-column:2;margin:0;padding:5px;background:none;justify-content:flex-start}.card-grid{grid-template-columns:1fr}.home-card-image{height:195px}.dashboard-end{display:grid;gap:9px}.footer-inner{display:block}.footer-right{text-align:left;margin-top:20px}.detail-top-right>span{display:none}.detail-heading{display:block;margin:20px 0}.detail-heading-price{text-align:left;margin-top:22px}.detail-heading-price b{font-size:25px}.gallery{display:block;height:280px}.gallery-thumbs{display:none}.detail-content{padding:0 17px}.detail-section{padding:25px 0}.detail-section h2{font-size:21px}.spec-grid,.infra-grid{grid-template-columns:repeat(2,1fr)}.detail-aside{display:block}.aside-note{margin-top:12px}.account-hero{padding:23px}.account-hero h1{font-size:24px}.account-avatar{width:55px;height:55px;font-size:27px}.account-heading{align-items:start;gap:10px}.account-heading h2{font-size:19px}.account-heading .button{font-size:0;width:40px;min-height:40px;padding:0}.account-heading .button svg{width:19px}.account-item{align-items:start;gap:10px}.account-item-image{width:80px;height:80px}.account-item-copy h3{font-size:11px}.account-item-actions{min-width:0}.small-action{font-size:0;justify-content:end}.small-action svg{width:17px}.form-heading h1{font-size:29px}.form-section{padding:17px}.form-fields{gap:11px}.form-field label{font-size:10px}.form-submit-row{display:block}.form-submit-row span{margin-top:12px}.form-submit-row .button{width:100%}}
+/* Personalized MVP */
+.preferences-sidebar{max-height:calc(100vh - 30px);overflow:auto;scrollbar-width:thin}.preferences-sidebar input[type=number]{width:100%;border:1px solid #e1e9f2;border-radius:8px;height:41px;padding:0 12px;color:#293e5c;font-size:11px;font-weight:700;background:#f7f9fc}.preferences-sidebar input[type=number]:focus,.preferences-sidebar select:focus{outline:2px solid #bddcff;border-color:#3185ff}.family-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.family-grid label{font-size:10px;color:#7086a0;font-weight:700}.family-grid select{margin-top:6px}.priority-block small{font-size:9px;color:#91a5ba}.priority-sliders{display:grid;gap:10px}.priority-slider{display:grid;gap:4px}.priority-slider>span{display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:700;color:#304c6d}.priority-slider b{background:#e9f2ff;color:#1575ed;border-radius:5px;min-width:22px;text-align:center;padding:2px}.priority-slider input{width:100%;accent-color:#1978f5;height:6px;margin:0}.sidebar-error{font-size:10px;color:#a83232;background:#fff0ef;border:1px solid #ffd5d2;border-radius:6px;padding:9px;margin-bottom:10px}.sidebar-apply:disabled{opacity:.7;cursor:wait}.recommendations-section{scroll-margin-top:20px}.recommendation-title{margin-top:27px}.recommendation-loading{min-height:150px;background:#fff;display:flex;align-items:center;justify-content:center;gap:12px;border:1px solid #e4ecf5;border-radius:10px;color:#6d86a0;font-size:11px}.recommendation-warning{display:flex;gap:10px;align-items:start;background:#fff8e8;border:1px solid #f7e3ac;border-radius:8px;color:#7a6126;padding:11px 13px;margin-bottom:12px}.recommendation-warning svg{flex:none;margin-top:1px}.recommendation-warning p{font-size:10px;line-height:1.45;margin:0 0 3px}.recommendation-warning p:last-child{margin:0}.recommendation-error{display:flex;align-items:center;gap:12px;border:1px solid #f2d8d4;background:#fff9f8;border-radius:9px;padding:18px;color:#97514a}.recommendation-error div{flex:1}.recommendation-error b{font-size:12px}.recommendation-error p{margin:3px 0 0;font-size:10px}.recommendation-error button{background:#fff;color:#ad4b40;border:1px solid #eed0cc;border-radius:6px;padding:8px 12px;font-size:10px;font-weight:800}.recommendation-empty{background:#fff;border:1px solid #e4ecf5;padding:30px;text-align:center;border-radius:9px}.recommendation-empty h3{font-size:16px}.recommendation-empty p{font-size:11px;color:#7890a8}.recommendation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.recommendation-card{min-width:0;overflow:hidden;background:#fff;border:1px solid #dce9f6;border-radius:10px;box-shadow:0 5px 20px #225c9e10;transition:transform .2s,box-shadow .2s}.recommendation-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #2764ac1b}.recommendation-cover{display:block;height:125px;background:#d9eaf8;overflow:hidden;position:relative}.recommendation-cover img{width:100%;height:100%;object-fit:cover}.recommendation-rank{position:absolute;left:9px;top:9px;border-radius:5px;background:#166de5;color:white;padding:5px 7px;font-size:9px;font-weight:800;letter-spacing:.4px}.recommendation-body{padding:12px}.recommendation-score-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}.recommendation-score{display:flex;align-items:center;gap:4px;color:#0a9b62;font-size:17px;font-weight:800}.recommendation-score small{font-size:10px;color:#8098aa}.score-caption{font-size:8px;font-weight:800;letter-spacing:.7px;color:#a0b1c3}.recommendation-title{font-weight:800;font-size:12px;line-height:1.35;display:flex;justify-content:space-between;align-items:start;gap:5px;min-height:34px}.recommendation-title svg{flex:none;color:#227fea}.recommendation-price{font-size:14px;font-weight:800;margin:8px 0 10px}.recommendation-price small{display:block;font-size:9px;color:#94a8bb;font-weight:600;margin-top:3px}.reason-list{padding:0;margin:0 0 10px;list-style:none;display:grid;gap:5px;min-height:36px}.reason-list li{display:flex;align-items:center;gap:5px;font-size:9px;color:#55708c}.reason-list svg{color:#15b779;flex:none}.mini-scores{border-top:1px solid #edf2f7;padding-top:9px;display:grid;gap:7px}.mini-scores>div{display:grid;grid-template-columns:58px 1fr 25px;align-items:center;gap:5px;font-size:9px;color:#7990a8}.mini-scores>div>div{height:6px;background:#eaf0f5;border-radius:9px;overflow:hidden}.mini-scores i{display:block;height:100%;background:linear-gradient(90deg,#2a84f1,#42c782);border-radius:9px}.mini-scores b{color:#416282;text-align:right}.card-warning{background:#fff5e8;color:#8e6c3d;padding:7px;margin-top:9px;border-radius:5px;font-size:9px}.recommendation-actions{display:flex;gap:5px;border-top:1px solid #edf2f7;margin-top:11px;padding-top:10px}.recommendation-actions button{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;padding:8px 4px;background:#f0f6fd;border:1px solid #e0edf9;border-radius:5px;color:#3974ae;font-size:9px;font-weight:800}.recommendation-actions button.active{background:#e9f9f1;border-color:#b4ebcf;color:#0c9f65}.recommendation-actions button:disabled{opacity:.45;cursor:not-allowed}.recommendation-meta{display:flex;align-items:center;gap:6px;margin:10px 2px 0;font-size:9px;color:#849bb0}.compare-tray{position:fixed;z-index:600;right:22px;bottom:20px;width:min(620px,calc(100vw - 44px));background:#fff;border:1px solid #c5ddf9;border-radius:11px;box-shadow:0 15px 45px #0c386b33;padding:15px}.compare-tray-head{display:flex;justify-content:space-between;align-items:start;border-bottom:1px solid #e8f0f8;padding-bottom:9px}.compare-tray-head b,.compare-tray-head span{display:block}.compare-tray-head b{font-size:13px}.compare-tray-head span{font-size:9px;color:#8b9fb3;margin-top:3px}.compare-tray-head button,.compare-remove{border:0;background:#edf4fc;color:#537fa9;border-radius:5px;display:grid;place-items:center;padding:5px}.compare-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:10px}.compare-columns>div{position:relative;background:#f6f9fc;border-radius:7px;padding:10px;min-width:0}.compare-columns a{display:flex;gap:3px;align-items:start;color:#2378d6;font-weight:800;font-size:10px;padding-right:14px;line-height:1.4}.compare-columns strong,.compare-columns span{display:block;margin-top:6px}.compare-columns strong{font-size:11px}.compare-columns span{font-size:9px;color:#66819d}.compare-remove{position:absolute;right:4px;top:4px;padding:2px}
+@media(max-width:1150px){.recommendation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.preferences-sidebar{max-height:calc(100vh - 18px)}}
+@media(max-width:760px){.preferences-sidebar{max-height:100vh}.recommendation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recommendation-title{font-size:11px}}
+@media(max-width:520px){.recommendation-grid{grid-template-columns:1fr}.recommendation-card{display:grid;grid-template-columns:100px 1fr}.recommendation-cover{height:100%;min-height:205px}.recommendation-rank{font-size:7px;left:4px;top:5px}.recommendation-body{padding:9px}.recommendation-score{font-size:14px}.recommendation-price{font-size:12px}.reason-list{min-height:0}.mini-scores{gap:3px}.mini-scores>div{font-size:8px}.recommendation-actions button{font-size:8px}.compare-tray{right:8px;bottom:8px;width:calc(100vw - 16px);padding:10px}.compare-columns{grid-template-columns:repeat(2,minmax(0,1fr))}.compare-columns>div:nth-child(3){grid-column:1/-1}.recommendation-warning p{font-size:9px}}
+.detail-sub-scores{display:grid;gap:7px;border-top:1px solid #e9eff5;padding:13px 0}.detail-sub-scores div{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#68829c}.detail-sub-scores b{color:#2d5b84}.predicted-price{background:#eff8ff;border-radius:7px;padding:11px;margin:5px 0 12px}.predicted-price span,.predicted-price b,.predicted-price small{display:block}.predicted-price span{font-size:9px;color:#6693b7}.predicted-price b{font-size:14px;margin:3px 0}.predicted-price small{font-size:8px;color:#8aa5bb;line-height:1.5}.detail-score-warnings{display:flex;align-items:start;gap:7px;background:#fff7e7;border:1px solid #f1e1bd;border-radius:6px;padding:10px;color:#806532;margin-top:12px}.detail-score-warnings svg{flex:none}.detail-score-warnings p{font-size:9px!important;font-weight:500!important;margin:0 0 5px!important;line-height:1.45}.detail-score-warnings p:last-child{margin-bottom:0!important}
+.saved-heading{margin-top:38px}.saved-heading p{font-size:10px;color:#8da0b4;margin:5px 0 0}.saved-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.saved-item{background:#fff;border:1px solid #e2ebf5;border-radius:9px;padding:9px;display:flex;align-items:center;gap:12px;min-width:0}.saved-item:hover{border-color:#76b3f8}.saved-item img{width:70px;height:56px;object-fit:cover;border-radius:5px}.saved-item span{flex:1;min-width:0}.saved-item b,.saved-item small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.saved-item b{font-size:11px}.saved-item small{font-size:9px;color:#8398ad;margin-top:4px}.saved-item>svg{color:#1678ee;flex:none}.saved-empty{background:#fff;border:1px solid #e4ecf5;border-radius:8px;padding:18px;color:#758aa2;font-size:11px}.saved-empty a{color:#1778ec;font-weight:800;margin-left:6px}@media(max-width:520px){.saved-grid{grid-template-columns:1fr}}
+
+
+/* Yandex map + workplace picker */
+.yandex-map-wrapper{background:#dfe8f0}
+.yandex-map-wrapper.work-picking .map-canvas{cursor:crosshair}
+.yandex-apartment-dot{width:10px;height:10px;border-radius:50%;transform:translate3d(-50%,-50%,0);background:#2e84f4;border:2px solid #fff;box-shadow:0 2px 7px #193e7945;backface-visibility:hidden}
+.yandex-apartment-dot.muted{opacity:.28}
+.yandex-apartment-dot:hover{box-shadow:0 3px 10px #193e7960}
+.yandex-price-pin{transform:translate3d(-50%,-100%,0);display:inline-flex;align-items:center;justify-content:center;min-width:88px;height:32px;padding:0 11px;background:#fff;color:#146ae0;border:2px solid #2e84f4;box-shadow:0 5px 14px #193e7938;border-radius:18px;font:800 10px/1 Manrope,Arial,sans-serif;white-space:nowrap;backface-visibility:hidden;user-select:none;contain:layout paint;transition:opacity .12s,border-color .12s,box-shadow .12s,background .12s}
+.yandex-price-pin span{pointer-events:none}
+.yandex-price-pin .price-short{display:none}
+.yandex-price-pin.compact{min-width:54px;height:25px;padding:0 8px;border-width:1.5px;border-radius:14px;font-size:8.5px;box-shadow:0 3px 9px #193e792d}
+.yandex-price-pin.compact .price-short{display:inline}
+.yandex-price-pin.compact .price-full{display:none}
+.yandex-price-pin:hover{background:#f8fbff;border-color:#075fc8;box-shadow:0 10px 26px #102f5a66}
+.yandex-price-pin.compact:hover{min-width:88px;height:32px;padding:0 11px;border-width:2px;font-size:10px}
+.yandex-price-pin.compact:hover .price-short{display:none}
+.yandex-price-pin.compact:hover .price-full{display:inline}
+.yandex-price-pin.muted{opacity:.22}
+.yandex-price-pin.muted:hover{opacity:1}
+.yandex-district-pin{transform:translate3d(-50%,-100%,0);min-width:88px;display:grid;justify-items:center;gap:2px;background:#09a66b;color:#fff;padding:6px 8px 6px;border-radius:8px;box-shadow:0 5px 13px #0f644d35;font:800 8.5px/1.1 Manrope,Arial,sans-serif;white-space:nowrap;backface-visibility:hidden;user-select:none;transition:transform .12s,box-shadow .12s,opacity .12s}
+.yandex-district-pin>span{font-size:8.5px;letter-spacing:.05px}.yandex-district-pin>div{display:flex;align-items:baseline;gap:2px}.yandex-district-pin b{font-size:14px}.yandex-district-pin em{font-style:normal;font-size:7px;opacity:.76}.yandex-district-pin small{font-size:6.5px;font-weight:700;opacity:.8}
+.yandex-district-pin:hover{transform:translate3d(-50%,-100%,0) scale(1.06);box-shadow:0 9px 20px #0f644d52}
+.yandex-district-pin.active{background:#087c51;outline:2px solid #b9eed8}
+.yandex-district-dot{width:12px;height:12px;border-radius:50%;transform:translate3d(-50%,-50%,0);background:#0aa86c;border:2px solid #fff;box-shadow:0 3px 8px #0d624b48;backface-visibility:hidden}
+.yandex-district-dot.active{width:16px;height:16px;background:#087c51;box-shadow:0 0 0 3px #b9eed899,0 4px 10px #0d624b55}
+.work-pick-hint{position:absolute;z-index:500;left:50%;top:14px;transform:translateX(-50%);background:#102d50e8;color:#fff;border-radius:8px;padding:9px 13px;font-size:10px;font-weight:800;box-shadow:0 8px 20px #102d5038;pointer-events:none;white-space:nowrap}
+.map-load-error{position:absolute;z-index:450;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;background:#eef4f9;color:#486581}
+.map-load-error b{font-size:14px;color:#264867}
+.map-load-error span{font-size:11px;margin-top:6px}
+.map-load-error small{font-size:9px;margin-top:6px;color:#8499ad}
+.legend-dot.red{background:#e94d4d}
+.work-location-control{display:flex;align-items:stretch;gap:6px}
+.work-location-pick{flex:1;min-width:0;display:flex;align-items:center;gap:9px;text-align:left;border:1px solid #dfe8f2;background:#f7faff;border-radius:8px;padding:9px;color:#2679dc}
+.work-location-pick:hover,.work-location-control.picking .work-location-pick{border-color:#3b8ef0;background:#edf6ff}
+.work-location-pick>svg{flex:none}
+.work-location-pick span{min-width:0}
+.work-location-pick b,.work-location-pick small{display:block}
+.work-location-pick b{font-size:10px;color:#2c4e71;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.work-location-pick small{font-size:8px;color:#879bb0;margin-top:3px;line-height:1.35}
+.work-location-clear{width:38px;display:grid;place-items:center;border:1px solid #f0d8d8;background:#fff8f8;color:#b85a5a;border-radius:8px}
+.work-location-clear:hover{background:#fff0f0}
+@media(max-width:520px){.work-pick-hint{max-width:calc(100% - 26px);white-space:normal;text-align:center}.map-legend{right:8px;top:auto;bottom:8px;padding:8px 10px}.map-legend span{font-size:8px}}
+
+
+/* Infrastructure layers */
+.map-layer-panel{position:absolute;right:14px;top:14px;z-index:520;width:208px;background:#fffffff2;border:1px solid #dfe8f2;border-radius:10px;box-shadow:0 8px 24px #173d6730;padding:10px;backdrop-filter:blur(8px)}
+.map-layer-title{display:flex;align-items:center;justify-content:space-between;padding:2px 3px 5px}
+.map-layer-title b{font-size:10px;color:#294866}.map-layer-title small{font-size:8px;color:#8ba0b4}
+.map-lod-status{margin:0 3px 8px;padding:6px 7px;border-radius:6px;background:#f3f7fc;color:#66809a;font-size:7.5px;font-weight:700;line-height:1.35}
+.map-layer-panel>button{width:100%;display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:7px;border:0;background:transparent;border-radius:7px;padding:7px 6px;color:#8194a7;text-align:left}
+.map-layer-panel>button:hover{background:#f2f7fc}.map-layer-panel>button.active{background:#eef6ff;color:#2e5579}
+.map-layer-panel>button span{font-size:9px;font-weight:800}.map-layer-panel>button small{font-size:8px;color:#9aabbb}
+.poi-dot{width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 2px #ffffff}
+.poi-dot.education{background:#2784f4}.poi-dot.parks{background:#11a86e}.poi-dot.healthcare{background:#e75555}.poi-dot.transport{background:#8b62df}.poi-dot.daily{background:#ef9a39}
+.map-data-warning{margin-top:7px;padding:7px;border-radius:6px;background:#fff5e8;color:#8f6d3d;font-size:8px;line-height:1.4}
+.map-layer-panel+.map-legend{top:auto;bottom:14px}
+@media(max-width:760px){.map-layer-panel{width:190px;right:8px;top:8px;padding:8px}.map-layer-panel>button{padding:6px 4px}.map-layer-panel>button span{font-size:8px}}
+@media(max-width:520px){.map-layer-panel{width:174px}.map-layer-title small{display:none}.map-layer-panel>button{grid-template-columns:10px 1fr auto;gap:5px}.map-layer-panel>button span{font-size:7.5px}.map-layer-panel+.map-legend{display:none}}
+
+
+/* Explainable life-fit score */
+.score-explanation{margin-top:10px;border-top:1px solid #e8eef5;padding-top:9px}
+.score-explanation summary{cursor:pointer;list-style:none;color:#2278d8;font-size:9px;font-weight:800}
+.score-explanation summary::-webkit-details-marker{display:none}
+.score-explanation summary:after{content:'+';float:right;color:#7d94aa;font-size:13px;line-height:9px}
+.score-explanation[open] summary:after{content:'−'}
+.score-explanation>div{display:grid;gap:5px;margin-top:9px}
+.score-explanation>div span{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:8.5px;color:#627b94}
+.score-explanation>div b{font-weight:700}.score-explanation>div em{font-style:normal;color:#0d9a64;font-weight:800}
+.score-explanation>small{display:block;margin-top:7px;font-size:7.5px;line-height:1.45;color:#9aabba}
+
+.money-preview{margin-top:5px;padding-left:2px;font-size:8.5px;font-weight:700;color:#879bb0;letter-spacing:.1px}
+
+.detail-contributions{margin-top:14px;padding:12px;border:1px solid #e6edf5;border-radius:9px;background:#f8fbfe}
+.detail-contributions>span{display:block;margin-bottom:8px;font-size:8px;font-weight:800;letter-spacing:.8px;color:#7d91a7;text-transform:uppercase}
+.detail-contributions>div{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid #edf2f7;font-size:9px;color:#57718b}
+.detail-contributions>div:last-of-type{border-bottom:0}.detail-contributions b{font-weight:700}.detail-contributions em{font-style:normal;font-weight:800;color:#0d9a64}
+.detail-contributions small{display:block;margin-top:8px;font-size:7.5px;line-height:1.45;color:#91a3b5}
+
+.score-audit{margin-top:14px;padding:11px 12px;border-radius:9px;background:#102d50;color:#fff}
+.score-audit>span{display:block;margin-bottom:7px;font-size:7.5px;font-weight:800;letter-spacing:.8px;color:#9ec2e4;text-transform:uppercase}
+.score-audit>div{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:4px 0;font-size:8px;line-height:1.35}
+.score-audit b{font-weight:700;color:#cce3f8}.score-audit em{max-width:58%;font-style:normal;text-align:right;color:#fff}
+
+
+/* Frontend resilience + report */
+.fatal-state{min-height:55vh;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:64px 0;color:#24435f}
+.fatal-state>svg{color:#d68a2c}.fatal-state>span{margin-top:15px;font-size:9px;font-weight:800;letter-spacing:1.4px;color:#8ba0b4}.fatal-state h1{margin:7px 0 8px;font-size:32px;color:#132547}.fatal-state p{max-width:620px;color:#6d8298;font-size:12px;line-height:1.7}.fatal-state>div{display:flex;gap:10px;margin-top:16px}.fatal-state .button{display:inline-flex;align-items:center;gap:7px}
+
+.recommendation-head-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.report-link{height:31px;display:inline-flex;align-items:center;gap:6px;padding:0 10px;border:1px solid #d9e6f3;background:#fff;border-radius:7px;color:#2676cf;font-size:9px;font-weight:800}.report-link:hover{background:#edf6ff;border-color:#9dc6f2}
+
+.report-page{padding:28px 0 68px}.report-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px}.report-toolbar .button{display:inline-flex;align-items:center;gap:7px}.report-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;padding:34px;border-radius:16px;background:#102d50;color:#fff}.report-header>div:first-child>span{font-size:9px;font-weight:800;letter-spacing:1.4px;color:#8fc0ef}.report-header h1{font-size:clamp(28px,4vw,48px);letter-spacing:-1.8px;margin:7px 0 8px}.report-header p{max-width:700px;margin:0;color:#bbd0e2;font-size:11px;line-height:1.7}.report-request{min-width:180px;padding:15px;border:1px solid #365472;border-radius:10px;background:#17395d}.report-request small,.report-request b,.report-request span{display:block}.report-request small{font-size:7px;letter-spacing:1px;color:#89aac7}.report-request b{margin-top:5px;font-size:13px}.report-request span{margin-top:5px;font-size:8px;color:#a9c4dc}
+
+.report-parameters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:12px 0}.report-parameters>div{min-width:0;padding:15px;background:#fff;border:1px solid #e4ebf3;border-radius:10px}.report-parameters small,.report-parameters b{display:block}.report-parameters small{font-size:8px;color:#899db1;margin-bottom:7px}.report-parameters b{font-size:11px;color:#294764;overflow-wrap:anywhere}.report-parameters b svg{vertical-align:-3px;color:#2c80e6;margin-right:3px}
+
+.report-warning{display:flex;align-items:flex-start;gap:10px;margin:13px 0;padding:13px 15px;border:1px solid #f2dfbc;border-radius:10px;background:#fff9ef;color:#795d31}.report-warning>svg{flex:none}.report-warning b{font-size:10px}.report-warning p{font-size:8.5px;line-height:1.5;margin:3px 0 0}
+
+.report-section{margin-top:28px}.report-section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:10px}.report-section-head>div{display:flex;align-items:center;gap:9px}.report-section-head>div>span{font-size:9px;font-weight:800;color:#2f83e9}.report-section-head h2{margin:0;font-size:20px;color:#193653}.report-section-head>small{font-size:8px;color:#91a4b7}
+
+.report-candidates{display:grid;gap:8px}.report-candidates article{display:grid;grid-template-columns:42px minmax(0,1fr) auto;align-items:center;gap:15px;padding:16px;background:#fff;border:1px solid #e3ebf3;border-radius:11px}.report-rank{display:grid;place-items:center;width:38px;height:38px;border-radius:9px;background:#edf5ff;color:#1e75dc;font-size:11px;font-weight:800}.report-candidate-main>span{font-size:7px;font-weight:800;letter-spacing:.9px;color:#8ea1b5}.report-candidate-main h3{font-size:13px;margin:3px 0;color:#183754}.report-candidate-main strong{font-size:11px}.report-candidate-main p{font-size:8.5px;color:#7e92a6;margin:4px 0 0;line-height:1.45}.report-score{display:flex;align-items:baseline;gap:3px;color:#0b9864}.report-score svg{align-self:center}.report-score b{font-size:23px}.report-score small{font-size:8px;color:#7f93a7}
+
+.report-factor-table{overflow:hidden;background:#fff;border:1px solid #e3ebf3;border-radius:11px}.report-factor-row{display:grid;grid-template-columns:minmax(140px,1fr) repeat(3,minmax(70px,.3fr));align-items:center;min-height:38px;padding:0 14px;border-top:1px solid #edf2f7;font-size:9px}.report-factor-row:first-child{border-top:0}.report-factor-row span{color:#607a93}.report-factor-row b{text-align:center;color:#294b6b}.report-factor-row.header{background:#f6f9fc;font-size:8px;font-weight:800}.report-factor-row.header span,.report-factor-row.header b{color:#8a9fb4}
+
+.report-footer{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:28px;padding-top:18px;border-top:1px solid #dfe7ef}.report-footer>div{padding:10px;background:#f8fbfe;border-radius:8px}.report-footer b,.report-footer span{display:block}.report-footer b{font-size:7px;letter-spacing:.7px;color:#91a3b5;text-transform:uppercase}.report-footer span{font-size:9px;color:#35536e;margin-top:4px}.report-footer p{grid-column:1/-1;margin:5px 0 0;font-size:8px;line-height:1.55;color:#8b9eb1}
+.report-empty{min-height:55vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}.report-empty svg{color:#2a7fdf}.report-empty h1{margin:12px 0 5px}.report-empty p{max-width:520px;color:#71879c;font-size:11px;line-height:1.6}.report-empty .button{margin-top:10px}
+
+@media(max-width:900px){.report-parameters{grid-template-columns:repeat(2,minmax(0,1fr))}.report-header{grid-template-columns:1fr}.report-request{width:min(260px,100%)}}
+@media(max-width:600px){.report-page{padding-top:16px}.report-toolbar{align-items:flex-start}.report-toolbar .back-link{font-size:9px}.report-header{padding:22px}.report-parameters{grid-template-columns:1fr 1fr}.report-candidates article{grid-template-columns:32px minmax(0,1fr);gap:10px}.report-rank{width:30px;height:30px}.report-score{grid-column:2}.report-factor-row{grid-template-columns:minmax(105px,1fr) repeat(3,54px);padding:0 9px}.report-footer{grid-template-columns:1fr}.report-footer p{grid-column:1}.fatal-state{padding:42px 0}.fatal-state>div{flex-wrap:wrap}}
+
+@media print{
+  .site-header,.demo-banner,.site-footer,.report-toolbar{display:none!important}
+  body,.app,.report-page{background:#fff!important}
+  .shell.report-page{width:100%;max-width:none;padding:0}
+  .report-header,.report-parameters>div,.report-candidates article,.report-factor-table,.report-footer>div{break-inside:avoid}
+  .report-header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+.share-button.active{color:#1676e8}.aside-note .button+.button{margin-top:8px}.aside-note .button.active{background:#eaf3ff;color:#126ad2}
+
+.map-layer-toggle{grid-template-columns:16px minmax(0,1fr) auto 14px!important;color:#294866!important;padding:5px 4px 8px!important;background:transparent!important}
+.map-layer-toggle>b{font-size:10px;text-align:left}.map-layer-toggle>small{font-size:8px!important;color:#8ba0b4!important;white-space:nowrap}.map-layer-toggle>svg:last-child{transition:transform .16s}.map-layer-panel.open .map-layer-toggle>svg:last-child{transform:rotate(180deg)}
+.map-layer-panel.collapsed{width:auto;min-width:132px;padding:6px 8px}.map-layer-panel.collapsed .map-layer-toggle{padding:4px!important}.map-layer-panel.collapsed .map-layer-toggle>small{display:none}
+@media(max-width:520px){.map-layer-panel{max-width:calc(100% - 16px)}.map-layer-panel.collapsed{min-width:112px}.map-layer-toggle>b{font-size:8px}}
+
+
+/* Post-MVP visual layer */
+.dashboard-intro{position:relative;overflow:hidden;isolation:isolate}
+.dashboard-intro>div:not(.city-signal){position:relative;z-index:2}
+.city-signal{position:absolute;z-index:0;right:175px;top:-26px;width:390px;height:175px;pointer-events:none;opacity:.92;filter:saturate(.96);mask-image:linear-gradient(90deg,transparent 0,#000 18%,#000 78%,transparent 100%)}
+.city-signal canvas{width:100%!important;height:100%!important}
+@media(max-width:1150px){.city-signal{right:10px;width:310px;opacity:.5}.dashboard-intro>div:first-child{max-width:720px}}
+@media(max-width:760px){.city-signal{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.home-card,.district-card,.yandex-price-pin,.yandex-district-pin,.yandex-district-dot{animation:none!important;transition:none!important}}
+
+
+/* Map LOD / large dataset states */
+.yandex-city-summary{transform:translate3d(-50%,-100%,0);min-width:138px;display:grid;justify-items:center;gap:2px;padding:11px 14px 10px;border:1px solid #cfe1f5;border-radius:12px;background:#fffffff4;box-shadow:0 10px 28px #173d6740;color:#173d67;backdrop-filter:blur(9px);user-select:none}
+.yandex-city-summary strong{font-size:13px;letter-spacing:-.2px}.yandex-city-summary span{font-size:10px;font-weight:800;color:#1476e8}.yandex-city-summary small{font-size:7.5px;font-weight:700;color:#8aa0b4}
+@media(max-width:520px){.yandex-city-summary{min-width:120px;padding:9px 11px}.yandex-city-summary strong{font-size:11px}.yandex-city-summary span{font-size:9px}}
+
+
+/* Dedicated comparison workspace */
+.nav-compare{display:inline-flex!important;align-items:center;gap:6px}.nav-compare b{display:grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:#e8f2ff;color:#176ef4;font-size:8px}.nav-compare.active{color:#176ef4;background:#edf4ff}
+.recommendation-meta-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px;flex-wrap:wrap}.recommendation-meta-row .recommendation-meta{margin:0}.compare-page-cta{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 11px;border:1px solid #cfe0f3;background:#fff;border-radius:8px;color:#1c73d4;font-size:9px;font-weight:800}.compare-page-cta:hover{background:#edf6ff}.compare-page-cta b{display:grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:#1974dc;color:#fff;font-size:8px}
+
+.compare-page{padding:25px 0 70px}.compare-page-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}.compare-clear-all{display:inline-flex;align-items:center;gap:7px;border:1px solid #eadede;background:#fffafa;color:#9b5656;border-radius:8px;padding:9px 11px;font-size:9px;font-weight:800}.compare-clear-all:hover{background:#fff1f1}
+.compare-page-head{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:26px 29px;border-radius:14px;background:#102d50;color:#fff}.compare-page-head>div:first-child>span{font-size:8px;font-weight:800;letter-spacing:1.2px;color:#8fc0ef}.compare-page-head h1{margin:6px 0 7px;font-size:clamp(28px,4vw,44px);letter-spacing:-1.5px}.compare-page-head p{margin:0;max-width:700px;font-size:10px;line-height:1.6;color:#b8cde0}.compare-page-count{display:flex;align-items:baseline;gap:3px;padding:13px 15px;border-radius:10px;background:#183d65;border:1px solid #315678}.compare-page-count b{font-size:30px}.compare-page-count span{font-size:10px;color:#8eb0cf}
+.compare-page-loading{display:flex;align-items:center;gap:9px;margin-top:12px;padding:12px 14px;border:1px solid #e2eaf3;border-radius:9px;background:#fff;color:#6b8399;font-size:9px}.compare-scroll{overflow-x:auto;margin-top:14px;padding-bottom:6px}.compare-matrix{--compare-count:2;display:grid;grid-template-columns:170px repeat(var(--compare-count),minmax(245px,1fr));min-width:max-content;background:#fff;border:1px solid #dfe8f1;border-radius:12px;overflow:hidden}.compare-label-cell,.compare-value-cell,.compare-object-card{border-bottom:1px solid #e8eef5;border-right:1px solid #e8eef5}.compare-label-cell{display:flex;align-items:center;padding:12px 14px;background:#f7faff;color:#6e8499;font-size:8.5px;font-weight:800;letter-spacing:.1px}.compare-sticky-label{align-items:flex-start;padding-top:18px;color:#2d506f}.compare-value-cell{display:flex;align-items:center;min-height:43px;padding:10px 13px;color:#294864;font-size:9.5px;font-weight:700}.compare-value-cell.wrap{align-items:flex-start;line-height:1.45}.compare-address{display:flex;align-items:flex-start;gap:5px}.compare-address svg{flex:none;margin-top:1px;color:#2a82e9}
+.compare-object-card{position:relative;display:grid;grid-template-rows:150px auto;min-height:242px;background:#fff}.compare-object-image{display:block;overflow:hidden;background:#edf3f8}.compare-object-image img{width:100%;height:100%;object-fit:cover}.compare-object-card>div:last-child{padding:12px}.compare-page-remove{position:absolute;right:8px;top:8px;z-index:3;display:grid;place-items:center;width:28px;height:28px;border:0;border-radius:50%;background:#fffffff2;color:#496883;box-shadow:0 4px 12px #173d6725}.compare-page-remove:hover{background:#fff;color:#c15050}.compare-object-score{display:inline-flex;align-items:center;gap:5px;margin-bottom:7px;color:#0b9864;font-size:8.5px;font-weight:800}.compare-object-title{display:flex;align-items:flex-start;gap:4px;color:#1f6fc8;font-size:11px;font-weight:800;line-height:1.35}.compare-object-title svg{flex:none}.compare-object-error{display:block;margin-top:6px;color:#b16666;font-size:8px;line-height:1.4}
+.compare-section-row{grid-column:1/-1;padding:10px 14px;background:#102d50;color:#fff;font-size:8px;font-weight:800;letter-spacing:.9px;text-transform:uppercase}.compare-page-note{margin:11px 2px 0;color:#8599ac;font-size:8px;line-height:1.5}
+.compare-empty-page{min-height:58vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}.compare-empty-page>svg{color:#2b7fdf}.compare-empty-page>span{margin-top:12px;font-size:8px;font-weight:800;letter-spacing:1.2px;color:#8da2b6}.compare-empty-page h1{margin:7px 0 5px;font-size:31px;color:#173653}.compare-empty-page p{max-width:560px;margin:0;color:#71869a;font-size:10px;line-height:1.6}.compare-empty-page .button{margin-top:12px}
+
+@media(max-width:760px){.compare-page{padding-top:15px}.compare-page-head{padding:20px;align-items:flex-start}.compare-page-count{display:none}.compare-page-toolbar{align-items:flex-start}.compare-matrix{grid-template-columns:125px repeat(var(--compare-count),minmax(220px,1fr))}.compare-object-card{grid-template-rows:125px auto}.compare-label-cell{padding:10px;font-size:8px}.compare-value-cell{padding:9px 10px;font-size:9px}}
+
+
+/* Source provenance + detail compare */
+.share-button:disabled{opacity:.45;cursor:not-allowed}
+.source-section{border-top:1px solid #e7eef5;padding-top:28px}
+.source-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;align-items:center;gap:10px;margin-top:14px;padding:13px 14px;border:1px solid #e3ebf3;border-radius:10px;background:#f8fbfe}
+.source-card>div span,.source-card>div b{display:block}.source-card>div span{font-size:7.5px;color:#8ba0b4;text-transform:uppercase;letter-spacing:.7px}.source-card>div b{margin-top:4px;font-size:10px;color:#294864}.source-card>a{display:inline-flex;align-items:center;gap:5px;justify-self:end;color:#1e75d6;font-size:9px;font-weight:800}
+@media(max-width:620px){.source-card{grid-template-columns:1fr}.source-card>a{justify-self:start}}
+
+
+/* Functional apartment gallery */
+.gallery-expand{position:absolute;z-index:4;right:14px;top:14px;display:inline-flex;align-items:center;gap:6px;border:0;border-radius:7px;background:#102d50e8;color:#fff;padding:8px 10px;font-size:9px;font-weight:800;backdrop-filter:blur(7px)}
+.gallery-expand:hover{background:#102d50}
+.gallery-thumbs{grid-template-rows:none;grid-auto-rows:minmax(64px,1fr);overflow-y:auto;scrollbar-width:thin}
+.gallery-thumbs button{position:relative;min-height:0}
+.gallery-thumbs button>span{position:absolute;right:6px;bottom:6px;display:grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#102d50d9;color:#fff;font-size:8px;font-weight:800}
+.gallery-more{display:grid!important;place-items:center;background:#eef5fc!important;color:#30618e!important;opacity:1!important;outline:0!important}
+.gallery-more b,.gallery-more span{display:block}.gallery-more b{font-size:18px}.gallery-more span{font-size:8px;margin-top:2px}
+.photo-lightbox{position:fixed;z-index:5000;inset:0;background:#08182be8;display:grid;place-items:center;padding:18px;backdrop-filter:blur(8px)}
+.photo-lightbox-inner{position:relative;width:min(1280px,96vw);height:min(860px,92vh);display:grid;grid-template-rows:minmax(0,1fr) 86px;gap:10px}
+.photo-lightbox-inner>img{width:100%;height:100%;object-fit:contain;border-radius:10px;background:#071423}
+.photo-lightbox-close{position:absolute;z-index:3;right:12px;top:12px;width:38px;height:38px;border:0;border-radius:50%;display:grid;place-items:center;background:#fff;color:#173653}
+.photo-lightbox-arrow{position:absolute;z-index:3;top:calc(50% - 45px);transform:translateY(-50%);width:42px;height:42px;border:0;border-radius:50%;display:grid;place-items:center;background:#fffffff0;color:#173653}
+.photo-lightbox-arrow.previous{left:12px}.photo-lightbox-arrow.next{right:12px}
+.photo-lightbox-counter{position:absolute;z-index:3;left:14px;top:14px;background:#102d50dc;color:#fff;border-radius:6px;padding:7px 9px;font-size:9px;font-weight:800}
+.photo-lightbox-strip{display:flex;gap:7px;overflow-x:auto;min-width:0;padding:2px}
+.photo-lightbox-strip button{flex:0 0 108px;height:78px;padding:0;border:2px solid transparent;border-radius:7px;overflow:hidden;background:#13283f;opacity:.58}
+.photo-lightbox-strip button.active{opacity:1;border-color:#3a91fb}.photo-lightbox-strip img{width:100%;height:100%;object-fit:cover}
+@media(max-width:760px){.gallery-expand{right:10px;top:10px}.photo-lightbox{padding:8px}.photo-lightbox-inner{width:100%;height:96vh;grid-template-rows:minmax(0,1fr) 68px}.photo-lightbox-strip button{flex-basis:86px;height:60px}}
+@media(max-width:520px){.gallery-expand{font-size:8px;padding:7px 8px}.photo-lightbox-arrow{width:36px;height:36px}.photo-lightbox-strip{display:none}.photo-lightbox-inner{grid-template-rows:1fr}}
+
+
+/* Functional catalog controls */
+.catalog-extra-filters{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}
+.catalog-extra-filters label>span{display:block;margin-bottom:5px;font-size:8px;font-weight:800;color:#7c91a7}
+.catalog-extra-filters input{width:100%;height:37px;border:1px solid #e1e9f2;border-radius:7px;padding:0 9px;background:#f7f9fc;color:#293e5c;font-size:10px;font-weight:700}
+.photo-filter-toggle{display:flex;align-items:center;gap:8px;margin-top:11px;padding:9px 10px;border:1px solid #e3ebf3;border-radius:8px;background:#f8fbfe;color:#486780;font-size:9px;font-weight:700}
+.photo-filter-toggle input{width:15px!important;height:15px!important;flex:none}
+.catalog-load-more{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}
+.catalog-load-more .button{min-width:190px}
+.catalog-load-more>span{font-size:9px;font-weight:800;color:#8da0b3}
+@media(max-width:520px){.catalog-extra-filters{grid-template-columns:1fr}.catalog-load-more{flex-direction:column;gap:7px}.catalog-load-more .button{width:100%}}
+
+.active-filter-chips{display:flex;flex-wrap:wrap;gap:7px;margin:-2px 0 12px}
+.active-filter-chips button{display:inline-flex;align-items:center;gap:6px;border:1px solid #dce8f4;background:#fff;border-radius:999px;padding:7px 9px;color:#42627f;font-size:8.5px;font-weight:800}
+.active-filter-chips button:hover{background:#eef6ff;border-color:#b9d5f1}.active-filter-chips button span{font-size:13px;line-height:1;color:#7f95aa}
+.active-filter-chips .clear-all{border-color:transparent;background:transparent;color:#8a9db0}
+
+/* Keep the hovered apartment marker visually above dense neighbors. */
+.yandex-price-pin:hover{transform:translate3d(-50%,-100%,0) scale(1.08);filter:saturate(1.08)}
+.yandex-price-pin.compact:hover{transform:translate3d(-50%,-100%,0) scale(1.08)}
+
+
+/* Mortgage calculator */
+.mortgage-calculator{margin-top:10px;padding:16px;border:1px solid #dfe8f2;border-radius:12px;background:#fff}
+.mortgage-head{display:flex;align-items:center;gap:10px;margin-bottom:13px}.mortgage-head>span{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#edf5ff;color:#2479dc}.mortgage-head small{display:block;font-size:7px;font-weight:800;letter-spacing:.8px;color:#93a5b7}.mortgage-head h3{margin:3px 0 0;font-size:13px;color:#213f5d}
+.mortgage-fields{display:grid;gap:9px}.mortgage-fields label>span{display:block;margin-bottom:5px;font-size:8px;font-weight:800;color:#6f8498}.mortgage-fields input,.mortgage-fields select{width:100%;height:38px;border:1px solid #dfe8f2;border-radius:7px;background:#f8fbfe;padding:0 9px;color:#24435f;font:700 10px Manrope,Arial,sans-serif}.mortgage-fields label>small{display:block;margin-top:4px;font-size:7px;color:#94a5b5;line-height:1.35}
+.mortgage-result{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px}.mortgage-result>div{padding:10px;border-radius:8px;background:#f6f9fc}.mortgage-result span,.mortgage-result b{display:block}.mortgage-result span{font-size:7px;color:#8599ac}.mortgage-result b{margin-top:4px;font-size:10px;color:#274764}.mortgage-result .primary{background:#102d50}.mortgage-result .primary span{color:#91b4d2}.mortgage-result .primary b{color:#fff;font-size:13px}
+.mortgage-note{display:flex;align-items:flex-start;gap:7px;margin:10px 0 0;padding-top:10px;border-top:1px solid #e8eef4;color:#8195a8;font-size:7.5px;line-height:1.45}.mortgage-note svg{flex:none;color:#4e82b4}
+@media(max-width:900px){.mortgage-calculator{margin-top:0}}
+@media(max-width:460px){.mortgage-result{grid-template-columns:1fr}}
+
+
+/* Original listing source actions */
+.card-source-link{display:flex;align-items:center;justify-content:center;gap:5px;margin:0 14px 13px;padding:8px 9px;border:1px solid #e1e9f1;border-radius:7px;background:#f8fbfe;color:#6b8196;font-size:8px;font-weight:800}
+.card-source-link:hover{border-color:#b9d5f1;background:#eef6ff;color:#1e71cf}
+.compare-source-link{display:inline-flex;align-items:center;gap:4px;color:#1e73d1;font-weight:800}
+.compare-source-link:hover{text-decoration:underline}
+
+
+/* Functional district explorer */
+.districts-all-link{display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border:1px solid #dce8f4;border-radius:8px;background:#fff;color:#1d72d1;font-size:9px;font-weight:800}
+.districts-all-link:hover{background:#edf6ff}
+.district-explorer-page{padding:24px 0 70px;background:#f3f7fb;min-height:70vh}
+.district-explorer-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.district-explorer-toolbar .button{display:inline-flex;align-items:center;gap:6px}
+.district-explorer-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.55fr);gap:22px;align-items:end;padding:28px;border-radius:15px;background:#102d50;color:#fff}.district-explorer-head>div:first-child>span{font-size:8px;font-weight:800;letter-spacing:1.2px;color:#8fc0ef}.district-explorer-head h1{max-width:900px;margin:6px 0 8px;font-size:clamp(28px,4vw,46px);letter-spacing:-1.5px;line-height:1.12}.district-explorer-head p{max-width:850px;margin:0;color:#b9cee1;font-size:10px;line-height:1.65}.district-explorer-summary{display:grid;grid-template-columns:1fr;gap:7px}.district-explorer-summary>div{padding:11px 13px;border:1px solid #315575;border-radius:9px;background:#16395f}.district-explorer-summary small,.district-explorer-summary b{display:block}.district-explorer-summary small{font-size:7px;color:#91b2cf}.district-explorer-summary b{margin-top:3px;font-size:13px}
+.district-affordability{display:grid;grid-template-columns:minmax(0,1fr) minmax(430px,.9fr);gap:18px;margin-top:13px;padding:18px;border:1px solid #dfe8f2;border-radius:12px;background:#fff}.district-affordability-copy>span{display:flex;align-items:center;gap:6px;font-size:8px;font-weight:800;letter-spacing:.8px;color:#2b7cd7}.district-affordability-copy h2{margin:7px 0 5px;font-size:18px;color:#213f5d}.district-affordability-copy p{margin:0;max-width:760px;color:#71869a;font-size:9px;line-height:1.55}.district-affordability-controls{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;align-items:end}.district-affordability-controls label{min-width:0}.district-affordability-controls label>span{display:block;margin-bottom:5px;font-size:7.5px;font-weight:800;color:#8195a8}.district-affordability-controls label>b{display:flex;align-items:center;height:38px;padding:0 10px;border-radius:7px;background:#f5f8fb;color:#294864;font-size:10px}.district-affordability-controls input,.district-affordability-controls select{width:100%;height:38px;border:1px solid #dfe8f2;border-radius:7px;background:#f8fbfe;padding:0 9px;color:#24435f;font:700 10px Manrope,Arial,sans-serif}
+.district-explorer-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:24px 0 10px}.district-explorer-controls>div{display:flex;align-items:center;gap:7px;color:#294864}.district-explorer-controls>div>b{font-size:12px}.district-explorer-controls>div>span{font-size:8px;color:#8ca0b3}.district-explorer-controls>label{display:flex;align-items:center;gap:8px;font-size:8px;font-weight:800;color:#6e8398}.district-explorer-controls .select-wrap select{height:34px;border:1px solid #dfe8f2;border-radius:7px;background:#fff;padding:0 30px 0 9px;font-size:9px;font-weight:700;color:#294864}
+.district-explorer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.district-explorer-card{padding:17px;border:1px solid #dfe8f2;border-radius:11px;background:#fff}.district-explorer-card.empty{opacity:.72}.district-explorer-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.district-explorer-card-head span{display:block;font-size:7.5px;font-weight:800;color:#8ba0b4;text-transform:uppercase;letter-spacing:.6px}.district-explorer-card-head h2{margin:4px 0 0;font-size:17px;color:#203f5c}.district-score{display:flex;align-items:baseline;gap:3px;color:#0b9864}.district-score svg{align-self:center}.district-score b{font-size:18px}.district-score small{font-size:7px;color:#8599ac}
+.district-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:13px}.district-metrics>div{padding:9px;background:#f7fafd;border-radius:8px}.district-metrics span,.district-metrics b{display:block}.district-metrics span{font-size:6.8px;color:#8da0b2}.district-metrics b{margin-top:4px;font-size:9px;color:#294864;overflow-wrap:anywhere}
+.district-range,.district-budget-row,.district-mortgage-row,.district-photo-row{display:flex;align-items:center;gap:7px;padding:9px 0;border-top:1px solid #edf2f6;font-size:8px;color:#72879a}.district-range{margin-top:10px}.district-range span,.district-budget-row span,.district-mortgage-row span{min-width:110px}.district-range b,.district-budget-row b,.district-mortgage-row b{margin-left:auto;text-align:right;color:#294864;font-size:8.5px}.district-budget-row b.fit{color:#0a9863}.district-budget-row b.over{color:#b66b46}.district-photo-row span{font-size:7.5px}.district-open-link{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:5px;padding:10px 11px;border-radius:8px;background:#edf5ff;color:#176fd4;font-size:9px;font-weight:800}.district-open-link:hover{background:#e1efff}.district-open-link.disabled{pointer-events:none;opacity:.45}
+@media(max-width:980px){.district-explorer-head,.district-affordability{grid-template-columns:1fr}.district-explorer-summary{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.district-explorer-grid{grid-template-columns:1fr}.district-metrics{grid-template-columns:1fr 1fr}.district-affordability-controls{grid-template-columns:1fr}.district-explorer-controls{align-items:flex-start;flex-direction:column}.district-explorer-summary{grid-template-columns:1fr}.district-explorer-head{padding:21px}}
+
+
+/* District explorer / affordability */
+.district-explorer-page{padding:24px 0 70px;background:#f3f7fb;min-height:70vh}
+.district-explorer-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.district-explorer-toolbar .button{display:inline-flex;align-items:center;gap:6px}
+.district-explorer-head{display:grid;grid-template-columns:minmax(0,1fr) 430px;gap:22px;align-items:end;padding:28px 30px;border-radius:15px;background:#102d50;color:#fff}
+.district-explorer-head>div:first-child>span{font-size:8px;font-weight:800;letter-spacing:1.2px;color:#92bce2}
+.district-explorer-head h1{max-width:820px;margin:7px 0 8px;font-size:clamp(29px,4vw,46px);line-height:1.06;letter-spacing:-1.7px}
+.district-explorer-head p{max-width:800px;margin:0;color:#b7ccdf;font-size:10px;line-height:1.65}
+.district-explorer-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.district-explorer-summary>div{min-width:0;padding:12px 13px;border:1px solid #315171;border-radius:9px;background:#17395c}
+.district-explorer-summary>div:last-child{grid-column:1/-1}
+.district-explorer-summary small,.district-explorer-summary b{display:block}
+.district-explorer-summary small{font-size:7px;color:#88a9c6}.district-explorer-summary b{margin-top:4px;font-size:14px;color:#fff;overflow-wrap:anywhere}
+
+.district-affordability{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.7fr);gap:18px;align-items:center;margin-top:13px;padding:17px 19px;border:1px solid #dfe8f1;border-radius:11px;background:#fff}
+.district-affordability-copy>span{display:flex;align-items:center;gap:6px;color:#2479da;font-size:7.5px;font-weight:800;letter-spacing:.9px}
+.district-affordability-copy h2{margin:5px 0 4px;font-size:16px;color:#203e5b}.district-affordability-copy p{margin:0;max-width:760px;color:#7b8fa2;font-size:8.5px;line-height:1.55}
+.district-affordability-controls{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+.district-affordability-controls label{min-width:0;padding:9px 10px;border:1px solid #e2eaf3;border-radius:8px;background:#f8fbfe}
+.district-affordability-controls label>span{display:block;margin-bottom:5px;font-size:7px;color:#8ba0b4}.district-affordability-controls label>b{display:block;font-size:9px;color:#2b4a66;overflow-wrap:anywhere}
+.district-affordability-controls input,.district-affordability-controls select{width:100%;height:30px;border:1px solid #d9e4ee;border-radius:6px;background:#fff;padding:0 7px;color:#294864;font-size:9px;font-weight:700}
+
+.district-explorer-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:24px 0 10px}
+.district-explorer-controls>div{display:flex;align-items:center;gap:7px;color:#294864}.district-explorer-controls>div b{font-size:14px}.district-explorer-controls>div span{font-size:8px;color:#8a9caf}
+.district-explorer-controls>label{display:flex;align-items:center;gap:8px;color:#7a8da0;font-size:8px;font-weight:800}.district-explorer-controls .select-wrap select{height:33px;padding:0 30px 0 9px}
+
+.district-explorer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.district-explorer-card{display:grid;gap:10px;padding:17px;border:1px solid #dfe8f1;border-radius:11px;background:#fff;box-shadow:0 4px 18px #174e8d08}
+.district-explorer-card.empty{background:#f8fafc;opacity:.72}
+.district-explorer-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.district-explorer-card-head>div:first-child>span{font-size:7px;font-weight:800;color:#91a4b7;text-transform:uppercase;letter-spacing:.6px}.district-explorer-card-head h2{margin:3px 0 0;font-size:18px;color:#1f3f5e}
+.district-score{display:flex;align-items:baseline;gap:3px;padding:7px 9px;border-radius:8px;background:#edf8f4;color:#0a9463}.district-score svg{align-self:center}.district-score b{font-size:17px}.district-score small{font-size:7px;color:#6c9f8e}
+.district-metrics{display:grid;grid-template-columns:1fr 1fr;gap:7px}.district-metrics>div{padding:9px 10px;border-radius:8px;background:#f6f9fc}.district-metrics span,.district-metrics b{display:block}.district-metrics span{font-size:7px;color:#8da0b2}.district-metrics b{margin-top:4px;font-size:9.5px;color:#294864}
+.district-range,.district-budget-row,.district-mortgage-row,.district-photo-row{display:flex;align-items:center;gap:7px;min-height:33px;padding:8px 10px;border:1px solid #e7edf4;border-radius:8px;color:#5d7690;font-size:8px}
+.district-range span,.district-budget-row span,.district-mortgage-row span{flex:1}.district-range b,.district-budget-row b,.district-mortgage-row b{color:#294864;text-align:right}.district-budget-row b.fit{color:#0b9563}.district-budget-row b.over{color:#b66a54}.district-photo-row{color:#7c92a6}
+.district-open-link{display:flex;align-items:center;justify-content:space-between;padding:10px 11px;border-radius:8px;background:#edf5ff;color:#176ed6;font-size:8.5px;font-weight:800}.district-open-link:hover{background:#e1efff}.district-open-link.disabled{pointer-events:none;color:#9aa9b8;background:#f0f3f6}
+@media(max-width:980px){.district-explorer-head{grid-template-columns:1fr}.district-explorer-summary{grid-template-columns:repeat(3,1fr)}.district-explorer-summary>div:last-child{grid-column:auto}.district-affordability{grid-template-columns:1fr}.district-explorer-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.district-explorer-page{padding-top:15px}.district-explorer-head{padding:20px}.district-explorer-summary{grid-template-columns:1fr 1fr}.district-explorer-summary>div:last-child{grid-column:1/-1}.district-affordability{padding:13px}.district-affordability-controls{grid-template-columns:1fr}.district-explorer-controls{align-items:flex-start;flex-direction:column}.district-explorer-controls>div span{display:none}.district-metrics{grid-template-columns:1fr}.district-range,.district-budget-row,.district-mortgage-row{align-items:flex-start}.district-range b,.district-budget-row b,.district-mortgage-row b{max-width:55%}}
+
+.district-title-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.district-title-actions>a{display:inline-flex;align-items:center;gap:5px;color:#1f73d2;font-size:8.5px;font-weight:800;padding:7px 9px;border:1px solid #dbe8f5;border-radius:7px;background:#fff}
+.district-title-actions>a:hover{background:#edf6ff}
+
+
+/* Finance tools */
+.finance-section{border-top:1px solid #e7eef5;padding-top:28px}
+.finance-tools{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start;margin-top:15px}
+.mortgage-mode{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:3px;margin-bottom:11px;border-radius:8px;background:#eff4f8}
+.mortgage-mode button{border:0;border-radius:6px;background:transparent;padding:8px;color:#6f8498;font-size:8.5px;font-weight:800}.mortgage-mode button.active{background:#fff;color:#176fd6;box-shadow:0 2px 7px #193e7914}
+.mortgage-select-wrap{position:relative}.mortgage-select-wrap svg{position:absolute;right:9px;top:12px;pointer-events:none;color:#8297aa}.mortgage-select-wrap select{padding-right:28px}
+.mortgage-bank-status{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-top:10px;padding:10px;border:1px solid #dfe9f2;border-radius:8px;background:#f8fbfe}.mortgage-bank-status.ineligible{border-color:#efd9cc;background:#fff9f5}.mortgage-bank-status>div span,.mortgage-bank-status>div b{display:block}.mortgage-bank-status>div span{font-size:7px;color:#8a9db0}.mortgage-bank-status>div b{margin-top:3px;font-size:9px;color:#294864}.mortgage-bank-status>p{grid-column:1/-1;margin:0;color:#806c5d;font-size:7.5px;line-height:1.45}.mortgage-bank-status>a{display:inline-flex;align-items:center;gap:4px;justify-self:end;color:#1d73d2;font-size:7.5px;font-weight:800}
+.mortgage-bank-directory{margin-top:10px;border:1px solid #e1e9f1;border-radius:8px;overflow:hidden}.mortgage-bank-directory summary{display:flex;justify-content:space-between;gap:8px;padding:10px 11px;background:#f8fbfe;cursor:pointer;color:#294864;font-size:8.5px;font-weight:800}.mortgage-bank-directory summary span{color:#8499ad;font-size:7.5px}.mortgage-bank-list{max-height:360px;overflow:auto}.mortgage-bank-list>button{width:100%;display:grid;grid-template-columns:32px minmax(0,1.2fr) minmax(90px,.7fr) minmax(105px,.8fr);align-items:center;gap:8px;padding:9px 10px;border:0;border-top:1px solid #edf2f6;background:#fff;text-align:left}.mortgage-bank-list>button:hover,.mortgage-bank-list>button.selected{background:#eef6ff}.mortgage-bank-logo{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:#e9f2fb;color:#266daf;font-size:8px;font-weight:900}.mortgage-bank-copy b,.mortgage-bank-copy small,.mortgage-bank-rate,.mortgage-bank-rate small{display:block}.mortgage-bank-copy b{font-size:8.5px;color:#284763}.mortgage-bank-copy small,.mortgage-bank-rate small{font-size:6.8px;color:#8da0b2;margin-top:2px}.mortgage-bank-rate{font-size:8.5px;font-weight:800;color:#294864}.mortgage-bank-payment{font-size:8px;font-weight:800;color:#0a9362;text-align:right}.mortgage-bank-payment.unavailable{color:#a17864}.mortgage-snapshot-note{padding:9px 10px;background:#fbfcfe;color:#8c9eaf;font-size:7px;line-height:1.4}
+
+.rent-buy-calculator{padding:16px;border:1px solid #dfe8f2;border-radius:12px;background:#fff}.rent-buy-head{display:flex;align-items:center;gap:10px;margin-bottom:13px}.rent-buy-head>span{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#edf8f4;color:#0b9664}.rent-buy-head small{display:block;font-size:7px;font-weight:800;letter-spacing:.8px;color:#92a6b7}.rent-buy-head h3{margin:3px 0 0;font-size:13px;color:#213f5d}
+.rent-buy-core-fields{display:grid;grid-template-columns:1fr 1fr;gap:8px}.rent-buy-core-fields label>span,.rent-buy-assumptions label>span{display:block;margin-bottom:5px;font-size:7.5px;font-weight:800;color:#74899d}.rent-buy-core-fields input,.rent-buy-core-fields select,.rent-buy-assumptions input{width:100%;height:37px;border:1px solid #dfe8f2;border-radius:7px;background:#f8fbfe;padding:0 9px;color:#24435f;font-size:9px;font-weight:700}
+.rent-buy-advanced-toggle{margin-top:8px;border:0;background:none;padding:4px 0;color:#2476d5;font-size:8px;font-weight:800}.rent-buy-assumptions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px;padding:9px;border-radius:8px;background:#f7fafc}.rent-buy-assumptions label{position:relative}.rent-buy-assumptions small{display:block;margin-top:3px;color:#91a2b2;font-size:6.8px}.rent-buy-warning{margin-top:9px;padding:9px 10px;border:1px solid #efd9cc;border-radius:8px;background:#fff9f5;color:#806754;font-size:7.5px;line-height:1.45}
+.rent-buy-result{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px}.rent-buy-column{padding:11px;border-radius:9px;background:#f7fafc}.rent-buy-column>span{display:flex;align-items:center;gap:5px;font-size:7px;font-weight:800;color:#7790a5}.rent-buy-column strong{display:block;margin-top:5px;font-size:14px;color:#254560}.rent-buy-column>small{display:block;margin-top:2px;color:#8ba0b3;font-size:6.8px}.rent-buy-column p{margin:8px 0 0;color:#6e8497;font-size:7.3px;line-height:1.55}.rent-buy-column.buy{background:#edf7f3}.rent-buy-column.rent{background:#f0f6ff}.rent-buy-difference{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;padding:10px;border-radius:8px;background:#102d50;color:#fff}.rent-buy-difference span{font-size:7.5px;color:#9bb8d2}.rent-buy-difference b{font-size:10px}.rent-buy-difference.rent-ahead{background:#34577c}.rent-buy-note{display:flex;align-items:flex-start;gap:7px;margin:10px 0 0;padding-top:10px;border-top:1px solid #e8eef4;color:#8195a8;font-size:7.5px;line-height:1.45}.rent-buy-note svg{flex:none;color:#4e82b4}
+@media(max-width:1150px){.finance-tools{grid-template-columns:1fr}.mortgage-bank-list>button{grid-template-columns:32px minmax(0,1fr) 90px 110px}}
+@media(max-width:600px){.rent-buy-core-fields,.rent-buy-assumptions,.rent-buy-result{grid-template-columns:1fr}.rent-buy-difference{grid-column:auto}.mortgage-bank-status{grid-template-columns:1fr}.mortgage-bank-status>a{justify-self:start}.mortgage-bank-list>button{grid-template-columns:30px minmax(0,1fr)}.mortgage-bank-rate,.mortgage-bank-payment{grid-column:2;text-align:left}.mortgage-bank-directory summary{display:block}.mortgage-bank-directory summary span{display:block;margin-top:4px}}
+
+/* GeoDom Pro functional workspace */
+.account-pro-card{display:grid;grid-template-columns:42px minmax(0,1fr) auto;align-items:center;gap:13px;margin:18px 0 26px;padding:15px 17px;border:1px solid #d8e7f5;border-radius:11px;background:#f4f9ff}.account-pro-card>span{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#102d50;color:#fff}.account-pro-card small,.account-pro-card b,.account-pro-card p{display:block}.account-pro-card small{font-size:7px;font-weight:800;letter-spacing:.8px;color:#4781bb}.account-pro-card b{margin-top:3px;font-size:11px;color:#23435f}.account-pro-card p{margin:3px 0 0;color:#8296a8;font-size:8px}
+.pro-page{padding:20px 0 70px;background:#f3f7fb;min-height:70vh}.pro-hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px;align-items:end;padding:27px 29px;border-radius:14px;background:#102d50;color:#fff}.pro-hero>div:first-child>span{display:flex;align-items:center;gap:6px;color:#8ebae1;font-size:8px;font-weight:800;letter-spacing:1px}.pro-hero h1{margin:7px 0 7px;font-size:clamp(28px,4vw,43px);letter-spacing:-1.5px;line-height:1.08}.pro-hero p{max-width:820px;margin:0;color:#b7ccdf;font-size:9.5px;line-height:1.6}.pro-hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.pro-hero-metrics>div{padding:10px;border:1px solid #315475;border-radius:8px;background:#173b60}.pro-hero-metrics small,.pro-hero-metrics b{display:block}.pro-hero-metrics small{font-size:6.8px;color:#90adca}.pro-hero-metrics b{margin-top:3px;font-size:17px}
+.pro-tabs{display:flex;gap:6px;margin:13px 0;padding:5px;border:1px solid #e1e9f1;border-radius:10px;background:#fff;overflow-x:auto}.pro-tabs button{display:flex;align-items:center;gap:6px;white-space:nowrap;border:0;border-radius:7px;background:transparent;padding:9px 12px;color:#637d94;font-size:8.5px;font-weight:800}.pro-tabs button.active{background:#102d50;color:#fff}
+.pro-workspace{padding:19px;border:1px solid #e0e8f1;border-radius:12px;background:#fff}.pro-section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:14px}.pro-section-head>div:first-child>span{font-size:7px;font-weight:800;letter-spacing:.9px;color:#297bd8}.pro-section-head h2{margin:4px 0 4px;font-size:19px;color:#213f5d}.pro-section-head p{max-width:800px;margin:0;color:#7c90a4;font-size:8.5px;line-height:1.55}.pro-lead-price{min-width:160px;padding:10px;border-radius:8px;background:#edf7f3}.pro-lead-price small,.pro-lead-price b,.pro-lead-price span{display:block}.pro-lead-price small{font-size:6.8px;color:#739688}.pro-lead-price b{margin-top:3px;color:#0a9463;font-size:13px}.pro-lead-price span{margin-top:2px;color:#7d958b;font-size:6.8px}
+.pro-property-select{display:block;margin-bottom:10px;font-size:8px;font-weight:800;color:#70869a}.pro-property-select select{display:block;width:min(650px,100%);height:38px;margin-top:5px;border:1px solid #dce7f0;border-radius:7px;background:#f8fbfe;padding:0 9px;color:#294864;font-size:9px;font-weight:700}.pro-leads{display:grid;gap:8px}.pro-lead-card{display:grid;grid-template-columns:36px minmax(0,1fr) 170px;gap:12px;padding:13px;border:1px solid #e3ebf3;border-radius:9px}.pro-lead-avatar{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#eaf3ff;color:#2074d2;font-size:11px;font-weight:900}.pro-lead-title{display:flex;align-items:center;gap:8px}.pro-lead-title h3{margin:0;font-size:11px;color:#294864}.pro-lead-title span{padding:4px 6px;border-radius:999px;background:#eaf7f1;color:#0a9563;font-size:7px;font-weight:800}.pro-lead-main>p{margin:4px 0;color:#698096;font-size:8px}.pro-lead-main>small{display:block;margin-top:6px;color:#8da0b2;font-size:7px}.pro-lead-tags,.pro-match-reasons{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.pro-lead-tags span{padding:4px 6px;border-radius:999px;background:#f0f4f8;color:#62798e;font-size:6.8px}.pro-match-reasons span{display:flex;align-items:center;gap:3px;color:#4c745f;font-size:6.8px}.pro-lead-contact{display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding-left:12px;border-left:1px solid #e7edf3;color:#668097}.pro-lead-contact b{font-size:9px;color:#294864;margin-top:3px}.pro-lead-contact small{font-size:6.8px;margin-top:3px;line-height:1.35}.pro-lead-contact button{margin-top:6px;border:0;border-radius:6px;background:#102d50;color:#fff;padding:7px 8px;font-size:7.5px;font-weight:800}
+.pro-promotion-list{display:grid;gap:8px}.pro-promotion-list article{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px;border:1px solid #e2eaf2;border-radius:9px}.pro-promotion-list h3{margin:5px 0 2px;font-size:11px;color:#294864}.pro-promotion-list p{margin:0;color:#7c91a5;font-size:8px}.promotion-status{display:inline-block;padding:4px 6px;border-radius:999px;background:#f0f3f6;color:#8395a6;font-size:6.8px;font-weight:800}.promotion-status.active{background:#fff2d9;color:#a16b0e}.promotion-actions{text-align:right}.promotion-actions small{display:block;margin-bottom:5px;color:#879aad;font-size:7px}.promotion-actions button{border:1px solid #d4e2ef;border-radius:7px;background:#f5f9fd;color:#236fc4;padding:8px 10px;font-size:8px;font-weight:800}.promotion-actions button.active{border-color:#efd8aa;background:#fff6e5;color:#97660f}
+.sponsored-section{margin-bottom:24px;padding:14px;border:1px solid #eedbad;border-radius:11px;background:#fffbf3}.sponsored-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:9px}.sponsored-heading span{font-size:7px;font-weight:800;color:#a5751f;letter-spacing:.8px}.sponsored-heading h2{margin:3px 0 0;font-size:16px;color:#3b4d5f}.sponsored-heading small{color:#9a8b6d;font-size:7px}.promoted-label{position:absolute;left:9px;top:9px;z-index:3;padding:5px 7px;border-radius:6px;background:#fff3d8;color:#946410;font-size:7px;font-weight:900;box-shadow:0 3px 8px #61400019}
+.developer-demo-card{padding:16px;border:1px solid #e0e8f1;border-radius:10px;background:#f9fbfd}.developer-demo-name{display:flex;align-items:center;gap:10px}.developer-building{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:#102d50;color:#fff}.developer-demo-name>div{flex:1}.developer-demo-name>div>span{font-size:6.8px;font-weight:800;color:#8b9fb2}.developer-demo-name h3{margin:2px 0;font-size:14px;color:#23425f}.developer-demo-name p{margin:0;color:#7c91a5;font-size:8px}.developer-demo-name>svg{color:#168ad2}.developer-demo-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:13px}.developer-demo-metrics>div{padding:10px;border-radius:8px;background:#fff;border:1px solid #e7edf3}.developer-demo-metrics small,.developer-demo-metrics b,.developer-demo-metrics span{display:block}.developer-demo-metrics small{font-size:6.8px;color:#8a9daf}.developer-demo-metrics b{margin-top:4px;font-size:11px;color:#294864}.developer-demo-metrics span{margin-top:2px;font-size:6.5px;color:#9aabb9}.developer-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}.developer-feature-grid span{display:flex;align-items:center;gap:5px;padding:8px;border-radius:7px;background:#eef6ff;color:#356a9d;font-size:7.5px;font-weight:700}
+.analytics-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.analytics-summary>div{padding:13px;border:1px solid #e2eaf2;border-radius:9px;background:#f8fbfe}.analytics-summary svg{color:#2679d9}.analytics-summary small,.analytics-summary b{display:block}.analytics-summary small{margin-top:5px;color:#8498aa;font-size:7px}.analytics-summary b{margin-top:3px;color:#294864;font-size:13px}.analytics-columns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.analytics-columns>div{padding:13px;border:1px solid #e3ebf3;border-radius:9px}.analytics-columns h3{margin:0 0 9px;font-size:11px;color:#294864}.analytics-row{display:grid;grid-template-columns:minmax(0,1fr) 25px;gap:6px;align-items:center;position:relative;padding:7px 0;border-top:1px solid #eef2f6;font-size:8px}.analytics-row:first-of-type{border-top:0}.analytics-row span{color:#637b91}.analytics-row b{text-align:right;color:#294864}.analytics-row i{grid-column:1/-1;height:3px;border-radius:3px;background:#2b82e4}.analytics-privacy-note{display:flex;align-items:flex-start;gap:7px;margin-top:10px;padding:10px;border-radius:8px;background:#eef4fa;color:#688096;font-size:7.5px;line-height:1.45}
+@media(max-width:900px){.pro-hero{grid-template-columns:1fr}.pro-lead-card{grid-template-columns:36px minmax(0,1fr)}.pro-lead-contact{grid-column:2;border-left:0;border-top:1px solid #e7edf3;padding:8px 0 0}.developer-feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.pro-page{padding-top:12px}.pro-hero{padding:20px}.pro-hero-metrics,.developer-demo-metrics,.analytics-summary,.analytics-columns{grid-template-columns:1fr}.pro-section-head,.pro-promotion-list article,.sponsored-heading{align-items:flex-start;flex-direction:column}.pro-lead-price{width:100%}.developer-feature-grid{grid-template-columns:1fr}.pro-workspace{padding:13px}}
+
+
+/* User-controlled demand sharing */
+.demand-share-panel{margin:18px 0 24px;padding:17px;border:1px solid #dbe7f1;border-radius:12px;background:#fff}
+.demand-share-head{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:start}
+.demand-share-head>span{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#eef6ff;color:#1f73d2}
+.demand-share-head small{display:block;font-size:7px;font-weight:800;letter-spacing:.9px;color:#4f83b7}.demand-share-head h2{margin:3px 0 4px;font-size:15px;color:#213f5d}.demand-share-head p{margin:0;max-width:820px;color:#7b8fa2;font-size:8px;line-height:1.5}
+.demand-share-status{display:flex;align-items:center;gap:5px;padding:7px 9px;border-radius:999px;background:#f0f4f7;color:#71869a;font-size:7.5px;font-weight:800;white-space:nowrap}.demand-share-status.active{background:#eaf7f1;color:#0a9463}
+.demand-share-snapshot{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:13px}.demand-share-snapshot>div{padding:9px 10px;border-radius:8px;background:#f7fafc}.demand-share-snapshot span,.demand-share-snapshot b{display:block}.demand-share-snapshot span{font-size:6.8px;color:#8da0b2}.demand-share-snapshot b{margin-top:3px;font-size:9px;color:#294864}
+.demand-share-form{display:grid;grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr);gap:10px;margin-top:12px}.demand-share-form>label>span{display:block;margin-bottom:5px;font-size:7.5px;font-weight:800;color:#71869a}.demand-share-form input[type=text],.demand-share-form input:not([type]){width:100%;height:38px;border:1px solid #dfe8f2;border-radius:7px;background:#f8fbfe;padding:0 9px;color:#294864;font-size:9px;font-weight:700}
+.demand-consent{display:flex!important;align-items:flex-start;gap:8px;padding:9px 10px;border:1px solid #e2eaf2;border-radius:8px;background:#f9fbfd}.demand-consent input{width:15px;height:15px;flex:none;margin-top:1px}.demand-consent span{margin:0!important}.demand-consent b,.demand-consent small{display:block}.demand-consent b{font-size:8px;color:#314f69}.demand-consent small{margin-top:3px;color:#8799aa;font-size:7px;line-height:1.4}
+.demand-share-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:11px}.demand-share-actions .button{display:inline-flex;align-items:center;gap:6px}.demand-delete{display:inline-flex;align-items:center;gap:5px;border:0;background:transparent;color:#a45d5d;padding:7px 4px;font-size:8px;font-weight:800}.demand-share-message{margin-top:9px;padding:8px 9px;border-radius:7px;background:#eef7f3;color:#3d6f5b;font-size:7.5px}.demand-share-footnote{margin:8px 0 0;color:#94a4b4;font-size:6.8px;line-height:1.4}
+
+/* CRM pipeline */
+.pro-crm-controls{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(180px,.5fr);gap:10px;align-items:end;margin-bottom:9px}.pro-stage-filter{display:block;font-size:8px;font-weight:800;color:#70869a}.pro-stage-filter select{display:block;width:100%;height:38px;margin-top:5px;border:1px solid #dce7f0;border-radius:7px;background:#f8fbfe;padding:0 9px;color:#294864;font-size:9px;font-weight:700}
+.pro-pipeline-summary{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.pro-pipeline-summary span{display:inline-flex;align-items:center;gap:4px;padding:6px 8px;border-radius:999px;background:#f2f6f9;color:#72869a;font-size:7px}.pro-pipeline-summary b{color:#294864;font-size:8px}.pro-lead-title em{padding:4px 6px;border-radius:999px;background:#eef6ff;color:#216fc3;font-size:6.7px;font-style:normal;font-weight:800}.lead-stage-select{display:block;width:100%;margin-bottom:8px;color:#7890a4;font-size:6.8px;font-weight:800}.lead-stage-select select{display:block;width:100%;height:31px;margin-top:4px;border:1px solid #dfe8f1;border-radius:6px;background:#fff;padding:0 6px;color:#294864;font-size:7.5px;font-weight:700}
+@media(max-width:780px){.demand-share-head{grid-template-columns:42px minmax(0,1fr)}.demand-share-status{grid-column:2;justify-self:start}.demand-share-snapshot{grid-template-columns:1fr 1fr}.demand-share-form,.pro-crm-controls{grid-template-columns:1fr}}
+@media(max-width:480px){.demand-share-snapshot{grid-template-columns:1fr}.demand-share-actions .button{width:100%;justify-content:center}}
+
+
+/* Saved searches and local alerting */
+.save-search-button{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 10px;border:1px solid #d9e6f2;border-radius:7px;background:#f7fbff;color:#256fc2;font-size:8px;font-weight:800;white-space:nowrap}.save-search-button:hover{background:#edf6ff;border-color:#bdd7ef}.saved-search-toast{display:flex;align-items:center;gap:6px;margin:0 0 10px;padding:9px 10px;border:1px solid #cce8dc;border-radius:8px;background:#eef9f4;color:#39745d;font-size:8px;font-weight:700}
+.saved-searches-panel{margin:18px 0 24px;padding:17px;border:1px solid #dce7f0;border-radius:12px;background:#fff}.saved-searches-head{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:start}.saved-searches-head>span{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#fff5df;color:#9a6a13}.saved-searches-head small{display:block;font-size:7px;font-weight:800;letter-spacing:.9px;color:#9a7a43}.saved-searches-head h2{margin:3px 0 4px;font-size:15px;color:#213f5d}.saved-searches-head p{margin:0;max-width:820px;color:#7c90a3;font-size:8px;line-height:1.5}.saved-searches-head>b{padding:7px 9px;border-radius:999px;background:#edf7f3;color:#0b9463;font-size:8px}
+.saved-search-list{display:grid;gap:8px;margin-top:13px}.saved-search-list article{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px;border:1px solid #e3ebf2;border-radius:9px;background:#fbfcfe}.saved-search-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:#eef5fc;color:#2a75c8}.saved-search-copy>div{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.saved-search-copy h3{margin:0;font-size:10px;color:#294864}.saved-search-copy>div>span{padding:4px 6px;border-radius:999px;background:#e9f7f0;color:#0a9463;font-size:6.8px;font-weight:800}.saved-search-copy p{margin:3px 0 2px;color:#667d92;font-size:7.6px}.saved-search-copy small{color:#95a5b4;font-size:6.8px}
+.saved-search-actions{display:flex;align-items:center;gap:5px}.saved-search-actions button{display:inline-flex;align-items:center;gap:4px;height:30px;border:1px solid #dce6ef;border-radius:6px;background:#fff;padding:0 8px;color:#657d92;font-size:7.5px;font-weight:800}.saved-search-actions button:hover{background:#f2f7fb}.saved-search-actions .saved-search-open{background:#102d50;color:#fff;border-color:#102d50}.saved-search-actions .danger{width:30px;padding:0;justify-content:center;color:#a55d5d}.saved-search-empty{margin-top:12px;padding:13px;border-radius:8px;background:#f7fafc;color:#7e91a4;font-size:8px}
+@media(max-width:800px){.saved-searches-head{grid-template-columns:42px minmax(0,1fr)}.saved-searches-head>b{grid-column:2;justify-self:start}.saved-search-list article{grid-template-columns:34px minmax(0,1fr)}.saved-search-actions{grid-column:2;flex-wrap:wrap}.listings-actions .save-search-button{order:-1}}
+@media(max-width:520px){.saved-search-actions{align-items:stretch;flex-direction:column}.saved-search-actions button{justify-content:center;width:100%}.saved-search-actions .danger{width:100%}}
+
+
+/* Mortgage calculator v2 — program-first, screenshot-inspired layout */
+.mortgage-calculator-v2{padding:24px;border:1px solid #e5e8ec;border-radius:22px;background:#fff;box-shadow:0 16px 40px rgba(27,45,63,.06)}
+.mortgage-v2-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}.mortgage-v2-head h3{margin:5px 0 5px;font-size:25px;line-height:1.05;color:#1c2c39}.mortgage-v2-head p{margin:0;max-width:640px;color:#748392;font-size:10px;line-height:1.55}.mortgage-v2-kicker{display:inline-flex;align-items:center;gap:6px;color:#52718d;font-size:7px;font-weight:900;letter-spacing:.9px}.mortgage-v2-snapshot{flex:none;padding:8px 10px;border-radius:999px;background:#f2f5f7;color:#71808d;font-size:7px;font-weight:800}
+.mortgage-program-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:18px}.mortgage-program-card{display:flex;align-items:center;gap:9px;min-height:58px;padding:10px;border:1px solid #e5e9ed;border-radius:13px;background:#f7f8f9;text-align:left;transition:.18s ease}.mortgage-program-card:hover{transform:translateY(-1px);background:#f1f5f8}.mortgage-program-card.active{border-color:#243746;background:#243746;color:#fff;box-shadow:0 8px 22px rgba(36,55,70,.14)}.mortgage-program-card.unavailable:not(.active){opacity:.58}.mortgage-program-icon{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:9px;background:#fff;color:#2e597d}.mortgage-program-card.active .mortgage-program-icon{background:rgba(255,255,255,.12);color:#fff}.mortgage-program-copy{min-width:0}.mortgage-program-copy b,.mortgage-program-copy small{display:block}.mortgage-program-copy b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:8.5px}.mortgage-program-copy small{margin-top:3px;color:#8696a3;font-size:6.7px}.mortgage-program-card.active .mortgage-program-copy small{color:#bfd0dc}
+.mortgage-v2-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.55fr);gap:14px;align-items:start}.mortgage-v2-controls{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mortgage-control-card{padding:14px 14px 12px;border:1px solid #e7ebef;border-radius:14px;background:#f7f8f9}.mortgage-control-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.mortgage-control-title span{color:#758492;font-size:8px;font-weight:800}.mortgage-control-title b{color:#1f3444;font-size:11px}.mortgage-range{width:100%;height:4px;margin:15px 0 12px;accent-color:#2b6c9f;cursor:pointer}.mortgage-control-input{display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px;height:38px;padding:0 10px;border:1px solid #dfe5ea;border-radius:9px;background:#fff}.mortgage-control-input.split{grid-template-columns:1fr auto auto}.mortgage-control-input input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#263d4f;font-size:10px;font-weight:800}.mortgage-control-input span{color:#7f8f9d;font-size:9px;font-weight:800}.mortgage-control-input em{padding:5px 7px;border-radius:6px;background:#eef3f7;color:#526d83;font-size:7px;font-style:normal;font-weight:900}.mortgage-years-scale{display:flex;justify-content:space-between;color:#94a2ae;font-size:6.8px}.mortgage-v2-select select{height:38px;border-radius:9px;background:#fff}.mortgage-control-help{display:block;margin-top:6px;color:#8292a0;font-size:7px}
+.mortgage-family-settings{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) 180px 180px;gap:8px;align-items:end;padding:12px;border:1px solid #e5e9ed;border-radius:14px;background:#f7f8f9}.mortgage-family-head{display:flex;align-items:center;gap:9px}.mortgage-family-head>svg{color:#2b6c9f}.mortgage-family-head b,.mortgage-family-head small{display:block}.mortgage-family-head b{font-size:9px;color:#243b4d}.mortgage-family-head small{margin-top:3px;color:#8795a2;font-size:6.8px}.mortgage-family-settings label>span{display:block;margin-bottom:5px;color:#71818e;font-size:7px;font-weight:800}.mortgage-family-settings select{width:100%;height:37px;border:1px solid #dfe5ea;border-radius:8px;background:#fff;padding:0 8px;color:#263d4f;font-size:8px;font-weight:800}
+.mortgage-program-note{grid-column:1/-1;display:flex;gap:9px;padding:11px 12px;border:1px solid #dce8f1;border-radius:11px;background:#f2f8fc;color:#45677f}.mortgage-program-note.warning{border-color:#ead9ca;background:#fff8f2;color:#835f45}.mortgage-program-note>svg{flex:none;margin-top:1px}.mortgage-program-note b,.mortgage-program-note p,.mortgage-program-note small,.mortgage-program-note a{display:block}.mortgage-program-note b{font-size:8.5px}.mortgage-program-note p{margin:3px 0;color:inherit;font-size:7.4px;line-height:1.45}.mortgage-program-note small{opacity:.84;font-size:6.9px;line-height:1.45}.mortgage-program-note a{margin-top:5px;color:#2d72a7;font-size:7px;font-weight:800}
+.mortgage-fit-warning{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 11px;border:1px solid #ead9ca;border-radius:10px;background:#fff8f2}.mortgage-fit-warning>div{display:flex;align-items:flex-start;gap:8px;color:#7e614d}.mortgage-fit-warning span,.mortgage-fit-warning b{display:block}.mortgage-fit-warning b{margin-bottom:2px;font-size:8px}.mortgage-fit-warning span{font-size:7px;line-height:1.4}.mortgage-fit-warning button{flex:none;border:0;border-radius:7px;background:#243746;color:#fff;padding:8px 10px;font-size:7px;font-weight:900}
+.mortgage-summary-card{position:sticky;top:86px;padding:19px;border-radius:17px;background:#eef1f3;color:#213646}.mortgage-summary-label{display:block;color:#788794;font-size:8px;font-weight:800}.mortgage-summary-card>strong{display:block;margin-top:6px;font-size:31px;line-height:1;color:#172b39}.mortgage-summary-card>small{display:block;margin-top:6px;color:#738391;font-size:7.5px}.mortgage-summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:17px}.mortgage-summary-grid>div{padding:10px;border-radius:10px;background:#fff}.mortgage-summary-grid span,.mortgage-summary-grid b{display:block}.mortgage-summary-grid span{color:#8896a1;font-size:6.6px}.mortgage-summary-grid b{margin-top:3px;color:#263d4f;font-size:8.6px}.mortgage-summary-program{display:flex;align-items:center;gap:8px;margin-top:10px;padding:10px;border-radius:10px;background:#243746;color:#fff}.mortgage-summary-program>span{display:grid;place-items:center;width:29px;height:29px;border-radius:8px;background:rgba(255,255,255,.12)}.mortgage-summary-program small,.mortgage-summary-program b{display:block}.mortgage-summary-program small{color:#aec0cd;font-size:6.5px}.mortgage-summary-program b{margin-top:2px;font-size:8.4px}.mortgage-summary-ok,.mortgage-summary-error{margin-top:10px;padding:9px;border-radius:9px;font-size:7px;line-height:1.45}.mortgage-summary-ok{background:#e4f4ec;color:#39715a}.mortgage-summary-error{background:#fff3ea;color:#895f43}
+.mortgage-v2-bank-directory{margin-top:14px;border-radius:13px}.mortgage-v2-bank-directory summary{align-items:center}.mortgage-v2-bank-directory summary>b{color:#7f8f9b;font-size:7px}.mortgage-bank-status.compact{margin-top:10px}.mortgage-v2-note{margin-top:11px}
+@media(max-width:1100px){.mortgage-program-grid{grid-template-columns:repeat(3,1fr)}.mortgage-v2-layout{grid-template-columns:1fr}.mortgage-summary-card{position:static}.mortgage-v2-controls{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.mortgage-calculator-v2{padding:16px;border-radius:16px}.mortgage-v2-head{flex-direction:column}.mortgage-v2-head h3{font-size:21px}.mortgage-program-grid{display:flex;overflow-x:auto;padding-bottom:4px}.mortgage-program-card{min-width:145px}.mortgage-v2-controls{grid-template-columns:1fr}.mortgage-family-settings{grid-column:auto;grid-template-columns:1fr}.mortgage-program-note,.mortgage-fit-warning{grid-column:auto}.mortgage-fit-warning{align-items:flex-start;flex-direction:column}.mortgage-summary-card>strong{font-size:27px}}
+@media(max-width:460px){.mortgage-summary-grid{grid-template-columns:1fr}.mortgage-program-card{min-width:132px}.mortgage-v2-snapshot{white-space:normal}}
+
+
+/* Mortgage summary hotfix: stable, non-sticky, low-repaint result panel */
+.mortgage-summary-card{
+  position:relative!important;
+  top:auto!important;
+  align-self:start;
+  min-width:0;
+  overflow:hidden;
+  padding:0!important;
+  border:1px solid #dfe6eb;
+  border-radius:16px!important;
+  background:#fff!important;
+  color:#213646!important;
+  box-shadow:none!important;
+  contain:layout paint;
+}
+.mortgage-summary-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 13px;border-bottom:1px solid #e8edf1;background:#fafbfc}
+.mortgage-summary-head .mortgage-summary-program{margin:0;padding:0;background:transparent;color:#263d4f;min-width:0}
+.mortgage-summary-head .mortgage-summary-program>span{background:#eef3f7;color:#315f82}
+.mortgage-summary-head .mortgage-summary-program small{color:#8a98a4}
+.mortgage-summary-head .mortgage-summary-program b{color:#263d4f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:170px}
+.mortgage-summary-state{flex:none;padding:5px 7px;border-radius:999px;background:#f2f4f6;color:#7b8994;font-size:6.7px;font-weight:900}
+.mortgage-summary-state.ready{background:#e8f5ee;color:#2f7358}
+.mortgage-summary-payment{padding:16px 14px 14px;border-bottom:1px solid #e8edf1}
+.mortgage-summary-payment>span{display:block;color:#7d8b96;font-size:7.5px;font-weight:800}
+.mortgage-summary-payment>strong{display:block;margin-top:5px;color:#132937;font-size:30px;line-height:1.05;letter-spacing:-.7px;font-variant-numeric:tabular-nums}
+.mortgage-summary-payment>small{display:block;margin-top:5px;color:#7d8c98;font-size:7.2px}
+.mortgage-summary-card .mortgage-summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0;border-bottom:1px solid #e8edf1}
+.mortgage-summary-card .mortgage-summary-grid>div{min-width:0;padding:11px 12px;border-radius:0;background:#fff}
+.mortgage-summary-card .mortgage-summary-grid>div:nth-child(odd){border-right:1px solid #edf1f4}
+.mortgage-summary-card .mortgage-summary-grid>div:nth-child(-n+2){border-bottom:1px solid #edf1f4}
+.mortgage-summary-card .mortgage-summary-grid span{color:#8b99a5;font-size:6.5px}
+.mortgage-summary-card .mortgage-summary-grid b{margin-top:4px;color:#263d4f;font-size:8.6px;line-height:1.3;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.mortgage-summary-message{margin:0;padding:10px 12px;font-size:7px;line-height:1.45}
+.mortgage-summary-message.ready{background:#f1f8f5;color:#466e5d}
+.mortgage-summary-message.error{background:#fff7f1;color:#835f48}
+.mortgage-bank-directory:not([open]) .mortgage-bank-list{display:none}
+@media(max-width:1100px){.mortgage-summary-card{width:100%}.mortgage-summary-head .mortgage-summary-program b{max-width:none}}
+@media(max-width:460px){.mortgage-summary-payment>strong{font-size:25px}.mortgage-summary-card .mortgage-summary-grid{grid-template-columns:1fr}.mortgage-summary-card .mortgage-summary-grid>div{border-right:0!important;border-bottom:1px solid #edf1f4}.mortgage-summary-card .mortgage-summary-grid>div:last-child{border-bottom:0}}
+
+
+/* Mortgage responsive layout hotfix
+   The calculator lives inside Detail, so viewport media queries were not enough:
+   at wide viewport the finance section still gave it only ~50% of the content width.
+   Make the finance tools stack and make the calculator respond to its own width. */
+.finance-tools{
+  grid-template-columns:minmax(0,1fr)!important;
+  width:100%;
+  min-width:0;
+}
+.finance-tools>*,
+.mortgage-calculator-v2,
+.mortgage-v2-layout,
+.mortgage-v2-controls,
+.mortgage-control-card,
+.mortgage-summary-card,
+.rent-buy-calculator{
+  min-width:0;
+  max-width:100%;
+}
+.mortgage-calculator-v2{
+  width:100%;
+  overflow:hidden;
+  container-type:inline-size;
+  container-name:mortgage;
+}
+.mortgage-v2-layout{
+  grid-template-columns:minmax(0,1fr) minmax(250px,320px);
+  width:100%;
+}
+.mortgage-v2-layout>*{min-width:0}
+.mortgage-v2-controls{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  width:100%;
+}
+.mortgage-control-card{
+  overflow:hidden;
+}
+.mortgage-program-grid{
+  grid-template-columns:repeat(auto-fit,minmax(132px,1fr));
+  width:100%;
+}
+.mortgage-program-card{
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+}
+.mortgage-program-copy{
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+}
+.mortgage-program-copy b,
+.mortgage-program-copy small{
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.mortgage-select-wrap,
+.mortgage-v2-select{
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+}
+.mortgage-select-wrap select,
+.mortgage-v2-select select{
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
+  appearance:none;
+}
+.mortgage-select-wrap svg{
+  z-index:2;
+}
+.mortgage-control-title{
+  min-width:0;
+}
+.mortgage-control-title>span,
+.mortgage-control-title>b{
+  min-width:0;
+}
+.mortgage-control-title>b{
+  text-align:right;
+  overflow-wrap:anywhere;
+}
+.mortgage-summary-card{
+  z-index:auto!important;
+  isolation:isolate;
+}
+.rent-buy-calculator{
+  width:100%;
+  overflow:hidden;
+}
+
+/* Component-width breakpoints: these fire from the actual calculator width,
+   not the browser viewport, so embedding it in narrow parents stays safe. */
+@container mortgage (max-width: 860px){
+  .mortgage-v2-layout{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .mortgage-summary-card{
+    width:100%;
+  }
+}
+@container mortgage (max-width: 640px){
+  .mortgage-calculator-v2{
+    padding:16px;
+    border-radius:16px;
+  }
+  .mortgage-v2-head{
+    flex-direction:column;
+  }
+  .mortgage-v2-controls{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .mortgage-program-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .mortgage-family-settings{
+    grid-column:auto;
+    grid-template-columns:minmax(0,1fr);
+  }
+  .mortgage-program-note,
+  .mortgage-fit-warning{
+    grid-column:auto;
+  }
+  .mortgage-fit-warning{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+}
+@container mortgage (max-width: 420px){
+  .mortgage-program-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .mortgage-program-card{
+    min-height:50px;
+  }
+  .mortgage-v2-head h3{
+    font-size:20px;
+  }
+  .mortgage-summary-head{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .mortgage-summary-card .mortgage-summary-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .mortgage-summary-card .mortgage-summary-grid>div{
+    border-right:0!important;
+    border-bottom:1px solid #edf1f4;
+  }
+  .mortgage-summary-card .mortgage-summary-grid>div:last-child{
+    border-bottom:0;
+  }
+}
+
+
+/* Mortgage wizard v4 */
+.mortgage-wizard{width:100%;min-width:0;overflow:hidden;border:1px solid #e3e8ed;border-radius:22px;background:#fff;box-shadow:0 18px 48px rgba(25,45,63,.07);container-type:inline-size;container-name:mortgageWizard}
+.mortgage-wizard *{box-sizing:border-box}
+.mortgage-wizard-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:24px 24px 14px}
+.mortgage-wizard-kicker{display:block;color:#4d728f;font-size:7px;font-weight:900;letter-spacing:1px}
+.mortgage-wizard-header h3{margin:6px 0 6px;font-size:28px;line-height:1.05;color:#142735;letter-spacing:-.8px}
+.mortgage-wizard-header p{margin:0;max-width:700px;color:#788895;font-size:9.5px;line-height:1.55}
+.mortgage-wizard-date{flex:none;padding:7px 9px;border-radius:999px;background:#f2f5f7;color:#74838f;font-size:6.8px;font-weight:800}
+.mortgage-wizard-progress{display:flex;align-items:center;gap:14px;padding:0 24px 18px;border-bottom:1px solid #edf0f3}
+.mortgage-wizard-progress>b{flex:none;color:#6b7a86;font-size:8px}
+.mortgage-wizard-bars{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;flex:1}
+.mortgage-wizard-bars span{height:5px;border-radius:999px;background:#e5e9ed;transition:background .18s ease}
+.mortgage-wizard-bars span.active{background:#1fa774}
+.mortgage-wizard-step{padding:22px 24px 24px}
+.mortgage-step-heading>span{display:block;color:#1c9a6c;font-size:7px;font-weight:900;letter-spacing:.9px}
+.mortgage-step-heading h4{margin:5px 0 5px;font-size:22px;line-height:1.08;color:#182d3c}
+.mortgage-step-heading p{margin:0;max-width:760px;color:#7c8b97;font-size:9px;line-height:1.55}
+.mortgage-step-heading.final{margin-bottom:14px}
+
+.mortgage-scenario-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:17px}
+.mortgage-scenario-tabs button{display:flex;align-items:center;gap:9px;min-width:0;padding:11px;border:1px solid #e4e9ed;border-radius:12px;background:#f7f9fa;color:#354a5b;text-align:left}
+.mortgage-scenario-tabs button>span{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:9px;background:#fff;color:#48718f}
+.mortgage-scenario-tabs button>div{min-width:0}
+.mortgage-scenario-tabs b,.mortgage-scenario-tabs small{display:block;overflow:hidden;text-overflow:ellipsis}
+.mortgage-scenario-tabs b{white-space:nowrap;font-size:8.6px}
+.mortgage-scenario-tabs small{margin-top:3px;color:#8998a5;font-size:6.6px;line-height:1.3}
+.mortgage-scenario-tabs button.active{border-color:#1fa774;background:#edf9f4;box-shadow:0 0 0 2px rgba(31,167,116,.08)}
+.mortgage-scenario-tabs button.active>span{background:#1fa774;color:#fff}
+.mortgage-scenario-tabs button.active b{color:#11724f}
+
+.mortgage-step-note{display:flex;align-items:flex-start;gap:8px;margin-top:10px;padding:9px 10px;border:1px solid #dfe9ef;border-radius:9px;background:#f7fafc;color:#657d8f;font-size:7.2px;line-height:1.45}
+.mortgage-step-note svg{flex:none;color:#3c779f}
+
+.mortgage-bank-choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.mortgage-bank-choice{position:relative;display:grid;grid-template-columns:38px minmax(0,1fr) auto 22px;align-items:center;gap:8px;min-width:0;padding:11px;border:1px solid #e5eaee;border-radius:11px;background:#fff;text-align:left}
+.mortgage-bank-choice:hover{background:#f8fafb}
+.mortgage-bank-choice.active{border-color:#1fa774;background:#f0faf6}
+.mortgage-bank-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#eef3f6;color:#2c526e;font-size:8px;font-weight:900;letter-spacing:-.2px}
+.mortgage-bank-mark.large{width:46px;height:46px;border-radius:12px;font-size:10px}
+.mortgage-bank-mark-sber{background:#e9f8ef;color:#14945f}.mortgage-bank-mark-tbank{background:#ffe95d;color:#111}.mortgage-bank-mark-alfa{background:#ffecec;color:#d82e2e}.mortgage-bank-mark-vtb{background:#eaf5ff;color:#1391db}.mortgage-bank-mark-domrf{background:#eef0ff;color:#202b63}.mortgage-bank-mark-psb{background:#fff1e7;color:#d46b25}.mortgage-bank-mark-sovcom{background:#edf6ff;color:#315d8a}
+.mortgage-bank-choice-copy{min-width:0}.mortgage-bank-choice-copy b,.mortgage-bank-choice-copy small{display:block;overflow:hidden;text-overflow:ellipsis}.mortgage-bank-choice-copy b{white-space:nowrap;color:#223c4e;font-size:8.5px}.mortgage-bank-choice-copy small{margin-top:3px;color:#8b9aa6;font-size:6.6px;white-space:nowrap}
+.mortgage-bank-choice-rate{text-align:right;min-width:72px}.mortgage-bank-choice-rate b,.mortgage-bank-choice-rate small{display:block}.mortgage-bank-choice-rate b{color:#159667;font-size:9px}.mortgage-bank-choice-rate small{margin-top:3px;max-width:100px;color:#8b9aa6;font-size:6.3px;line-height:1.2}
+.mortgage-bank-radio{display:grid;place-items:center;width:20px;height:20px;border:1px solid #cfd8df;border-radius:50%;color:#fff}
+.mortgage-bank-choice.active .mortgage-bank-radio{border-color:#1fa774;background:#1fa774}
+
+.mortgage-wizard-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:18px}
+.mortgage-wizard-actions.end{justify-content:flex-end}.mortgage-wizard-actions.start{justify-content:flex-start;margin-top:12px}
+.mortgage-wizard-primary,.mortgage-wizard-secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:42px;border-radius:10px;padding:0 16px;font-size:8.5px;font-weight:900}
+.mortgage-wizard-primary{border:0;background:#1fa774;color:#fff}.mortgage-wizard-primary:hover{background:#17875e}
+.mortgage-wizard-secondary{border:1px solid #dce4ea;background:#fff;color:#536b7d}.mortgage-wizard-secondary:hover{background:#f7f9fa}
+
+.mortgage-borrower-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:16px}
+.mortgage-borrower-grid>label,.mortgage-borrower-bank{padding:12px;border:1px solid #e4e9ed;border-radius:11px;background:#f8fafb}
+.mortgage-borrower-grid label>span{display:block;margin-bottom:6px;color:#647b8d;font-size:7.4px;font-weight:800}
+.mortgage-borrower-grid label>div:not(.mortgage-borrower-select){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;height:38px;border:1px solid #dfe6eb;border-radius:8px;background:#fff;padding:0 9px}
+.mortgage-borrower-grid input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#243d4f;font-size:9px;font-weight:800}
+.mortgage-borrower-grid em{color:#8998a4;font-size:7px;font-style:normal;font-weight:800}
+.mortgage-borrower-grid label>small{display:block;margin-top:5px;color:#92a0ab;font-size:6.5px;line-height:1.35}
+.mortgage-borrower-select{position:relative}.mortgage-borrower-select select{width:100%;height:38px;border:1px solid #dfe6eb;border-radius:8px;background:#fff;padding:0 30px 0 9px;color:#243d4f;font-size:8px;font-weight:800;appearance:none}.mortgage-borrower-select svg{position:absolute;right:9px;top:11px;color:#7d8d99;pointer-events:none}
+.mortgage-borrower-bank{display:flex;align-items:center;gap:10px}.mortgage-borrower-bank>div{min-width:0}.mortgage-borrower-bank span,.mortgage-borrower-bank b,.mortgage-borrower-bank small{display:block}.mortgage-borrower-bank span{color:#8595a2;font-size:6.8px}.mortgage-borrower-bank b{margin-top:3px;color:#213c4e;font-size:10px}.mortgage-borrower-bank small{margin-top:2px;color:#8495a2;font-size:6.8px}
+
+.mortgage-program-check{display:grid;grid-template-columns:minmax(0,1fr) 180px 180px;gap:8px;align-items:end;margin-top:10px;padding:11px;border:1px solid #dce8ef;border-radius:11px;background:#f4f9fc}
+.mortgage-program-check>div{display:flex;align-items:center;gap:8px}.mortgage-program-check>div svg{color:#2c719e}.mortgage-program-check b,.mortgage-program-check small{display:block}.mortgage-program-check b{font-size:8.5px;color:#26465d}.mortgage-program-check small{margin-top:2px;color:#7f93a2;font-size:6.6px}
+.mortgage-program-check label>span{display:block;margin-bottom:4px;color:#6c8294;font-size:6.8px;font-weight:800}.mortgage-program-check select{width:100%;height:36px;border:1px solid #dce5eb;border-radius:8px;background:#fff;padding:0 8px;color:#263f50;font-size:8px;font-weight:800}
+.mortgage-it-check{display:flex;align-items:flex-start;gap:8px;margin-top:10px;padding:11px;border:1px solid #dce8ef;border-radius:11px;background:#f4f9fc}.mortgage-it-check input{width:16px;height:16px;flex:none;margin-top:1px}.mortgage-it-check svg{flex:none;color:#2d719f}.mortgage-it-check b,.mortgage-it-check small{display:block}.mortgage-it-check b{font-size:8px;color:#27475d}.mortgage-it-check small{margin-top:3px;color:#8295a3;font-size:6.7px;line-height:1.4}
+.mortgage-step-warning{margin-top:9px;padding:9px 10px;border:1px solid #ecd9c9;border-radius:9px;background:#fff8f2;color:#805f49;font-size:7px;line-height:1.45}
+
+.mortgage-parameter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:16px}
+.mortgage-parameter-grid>label{min-width:0;padding:12px;border:1px solid #e4e9ed;border-radius:11px;background:#f8fafb}
+.mortgage-parameter-grid>label>span{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#657c8f;font-size:7.2px;font-weight:800}.mortgage-parameter-grid>label>span b{color:#203b4e;font-size:9px}
+.mortgage-parameter-grid input[type=range]{width:100%;height:4px;margin:14px 0 9px;accent-color:#1fa774}.mortgage-parameter-grid>label>div{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:7px}.mortgage-parameter-grid>label>div small{color:#98a5af;font-size:6.4px}.mortgage-parameter-grid input[type=number],.mortgage-parameter-grid select{width:100%;min-width:0;height:34px;border:1px solid #dfe6eb;border-radius:7px;background:#fff;padding:0 8px;text-align:center;color:#263e50;font-size:8px;font-weight:800}
+.mortgage-program-select-card>div{position:relative;grid-template-columns:30px minmax(0,1fr)!important;margin-top:11px}.mortgage-program-select-card>div>span{display:grid;place-items:center;width:30px;height:30px;border-radius:7px;background:#eef4f7;color:#396886}.mortgage-program-select-card select{padding-right:28px;text-align:left}.mortgage-program-select-card svg{position:absolute;right:9px;top:10px;color:#7d8d99;pointer-events:none}.mortgage-program-select-card>small{display:block!important;margin-top:6px;color:#94a1ac!important}
+.mortgage-offers-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:18px 0 8px}.mortgage-offers-head>div>span{display:block;color:#1b9c6d;font-size:6.8px;font-weight:900;letter-spacing:.8px}.mortgage-offers-head h5{margin:4px 0 0;color:#223d50;font-size:12px}.mortgage-offers-head>small{max-width:320px;color:#8898a5;font-size:6.8px;line-height:1.4;text-align:right}
+.mortgage-offer-list{display:grid;gap:6px}.mortgage-offer-row{display:grid;grid-template-columns:38px minmax(0,1.25fr) minmax(70px,.45fr) minmax(105px,.65fr) 26px;align-items:center;gap:8px;width:100%;min-width:0;padding:9px 10px;border:1px solid #e4e9ed;border-radius:10px;background:#fff;text-align:left}.mortgage-offer-row:hover{background:#f8fafb}.mortgage-offer-row.active{border-color:#1fa774;background:#f0faf6}.mortgage-offer-row.disabled{opacity:.62}.mortgage-offer-bank{min-width:0}.mortgage-offer-bank b,.mortgage-offer-bank small,.mortgage-offer-row>span>small,.mortgage-offer-row>span>b{display:block}.mortgage-offer-bank b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#223d4e;font-size:8.5px}.mortgage-offer-bank small,.mortgage-offer-row>span>small{margin-top:2px;color:#8d9ba6;font-size:6.4px}.mortgage-offer-row>span>b{margin-top:2px;color:#214057;font-size:8.7px}.mortgage-offer-choice{display:grid!important;place-items:center;width:22px;height:22px;border:1px solid #ced8df;border-radius:50%;color:#7f8e99;font-size:7px}.mortgage-offer-row.active .mortgage-offer-choice{border-color:#1fa774;background:#1fa774;color:#fff}
+
+.mortgage-final-featured{padding:15px;border:2px solid #1fa774;border-radius:15px;background:#fbfffd}
+.mortgage-final-badge{display:inline-flex;align-items:center;gap:5px;padding:6px 8px;border-radius:999px;background:#1fa774;color:#fff;font-size:7px;font-weight:900}
+.mortgage-final-bank{display:grid;grid-template-columns:46px minmax(0,1fr) auto;align-items:center;gap:10px;margin-top:12px;padding-bottom:12px;border-bottom:1px solid #dfece6}.mortgage-final-bank>div{min-width:0}.mortgage-final-bank h5{margin:0;color:#1c3547;font-size:15px}.mortgage-final-bank p{margin:3px 0 0;color:#7d8f9c;font-size:7.2px}.mortgage-final-bank>a{display:inline-flex;align-items:center;gap:4px;color:#197450;font-size:7px;font-weight:800}
+.mortgage-final-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}.mortgage-final-metrics>div{padding:10px;border-radius:9px;background:#fff;border:1px solid #e6ece8}.mortgage-final-metrics span,.mortgage-final-metrics b{display:block}.mortgage-final-metrics span{color:#8797a3;font-size:6.5px}.mortgage-final-metrics b{margin-top:4px;color:#203b4d;font-size:9.5px}.mortgage-final-metrics .payment{background:#edf8f3;border-color:#cce9dc}.mortgage-final-metrics .payment b{color:#15855c;font-size:12px}
+.mortgage-final-load{display:flex;align-items:flex-start;gap:7px;margin-top:10px;padding:9px 10px;border-radius:9px;background:#eef5fb;color:#5a7488;font-size:6.9px;line-height:1.45}.mortgage-final-load svg{flex:none;color:#39739c}.mortgage-final-warning{margin-top:10px;padding:9px 10px;border-radius:9px;background:#fff4eb;color:#865f44;font-size:7px}
+.mortgage-other-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-top:18px}.mortgage-other-head h5{margin:0;color:#233e50;font-size:13px}.mortgage-other-head p{margin:3px 0 0;color:#8797a3;font-size:7px}.mortgage-other-head button{display:inline-flex;align-items:center;gap:4px;border:0;background:none;color:#1b7a56;font-size:7.5px;font-weight:900}
+.mortgage-other-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:8px}.mortgage-other-grid>button{display:grid;grid-template-columns:36px minmax(0,1fr) auto 14px;align-items:center;gap:7px;min-width:0;padding:9px;border:1px solid #e4e9ed;border-radius:10px;background:#fff;text-align:left}.mortgage-other-grid>button:hover{background:#f8fafb}.mortgage-other-grid>button.disabled{opacity:.58}.mortgage-other-grid>button>span:not(.mortgage-bank-mark){min-width:0}.mortgage-other-grid b,.mortgage-other-grid small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.mortgage-other-grid b{color:#253f51;font-size:8px}.mortgage-other-grid small{margin-top:2px;color:#8495a2;font-size:6.4px}.mortgage-other-grid strong{color:#1a7d58;font-size:7.5px;white-space:nowrap}
+.mortgage-final-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:15px}.mortgage-final-actions>a,.mortgage-final-actions>button{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;border-radius:10px;font-size:8.5px;font-weight:900}.mortgage-apply-button{background:#1fa774;color:#fff}.mortgage-final-actions>button{border:1px solid #1fa774;background:#fff;color:#16825b}.mortgage-final-actions>button.saved{background:#edf8f3}.mortgage-final-footnote{margin:7px 0 0;color:#95a2ad;font-size:6.5px;line-height:1.4}
+
+@container mortgageWizard (max-width:900px){
+  .mortgage-bank-choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mortgage-scenario-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mortgage-other-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@container mortgageWizard (max-width:680px){
+  .mortgage-wizard-header{flex-direction:column}
+  .mortgage-wizard-step,.mortgage-wizard-header{padding-left:16px;padding-right:16px}
+  .mortgage-wizard-progress{padding-left:16px;padding-right:16px}
+  .mortgage-bank-choice-grid{grid-template-columns:minmax(0,1fr)}
+  .mortgage-borrower-grid,.mortgage-parameter-grid{grid-template-columns:minmax(0,1fr)}
+  .mortgage-program-check{grid-template-columns:minmax(0,1fr)}
+  .mortgage-offers-head{align-items:flex-start;flex-direction:column}.mortgage-offers-head>small{text-align:left}
+  .mortgage-offer-row{grid-template-columns:38px minmax(0,1fr) 24px}.mortgage-offer-row>span:nth-of-type(2),.mortgage-offer-row>span:nth-of-type(3){grid-column:2}.mortgage-offer-row>span:nth-of-type(4){grid-column:3;grid-row:1/3}
+  .mortgage-final-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mortgage-other-grid{grid-template-columns:minmax(0,1fr)}
+}
+@container mortgageWizard (max-width:460px){
+  .mortgage-wizard-header h3{font-size:23px}
+  .mortgage-scenario-tabs{grid-template-columns:minmax(0,1fr)}
+  .mortgage-bank-choice{grid-template-columns:36px minmax(0,1fr) 20px}.mortgage-bank-choice-rate{grid-column:2;text-align:left;min-width:0}.mortgage-bank-radio{grid-column:3;grid-row:1/3}
+  .mortgage-final-bank{grid-template-columns:46px minmax(0,1fr)}.mortgage-final-bank>a{grid-column:2}
+  .mortgage-final-metrics{grid-template-columns:minmax(0,1fr)}
+  .mortgage-final-actions{grid-template-columns:minmax(0,1fr)}
+  .mortgage-wizard-actions{align-items:stretch;flex-direction:column-reverse}.mortgage-wizard-actions.end{align-items:stretch}.mortgage-wizard-primary,.mortgage-wizard-secondary{width:100%}
+}
+
+
+/* =========================================================
+   MVP mobile / tablet production pass
+   Final overrides intentionally live at the end of the file.
+   ========================================================= */
+html,body,#root,.app{max-width:100%}
+html{overflow-x:hidden}
+body{overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button,a{touch-action:manipulation}
+img,svg,canvas{max-width:100%}
+:where(.dashboard-main,.detail-content,.detail-aside,.pro-workspace,.account-page,.form-page,.report-page,.district-explorer-page){min-width:0}
+
+/* Header behaves like a proper mobile shell. */
+@media(max-width:760px){
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:1200;
+    height:64px;
+    padding-top:env(safe-area-inset-top);
+    background:#fffffff7;
+    backdrop-filter:blur(16px);
+  }
+  .header-inner{height:64px}
+  .brand{gap:9px}
+  .brand-symbol{width:38px;height:38px;border-radius:10px}
+  .brand-symbol svg{width:21px;height:21px}
+  .brand-name{font-size:19px;letter-spacing:-.7px}
+  .brand-label{font-size:8px;margin-top:3px}
+  .mobile-menu{width:44px;height:44px;border-radius:10px;flex:none}
+  .mobile-panel-backdrop{
+    display:block;
+    position:fixed;
+    z-index:1170;
+    inset:calc(64px + env(safe-area-inset-top)) 0 0;
+    border:0;
+    background:#071b396b;
+    backdrop-filter:blur(2px);
+  }
+  .mobile-panel{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    z-index:1180;
+    top:calc(64px + env(safe-area-inset-top));
+    right:0;
+    bottom:0;
+    left:auto;
+    width:min(390px,92vw);
+    max-height:calc(100dvh - 64px - env(safe-area-inset-top));
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    padding:12px 12px calc(16px + env(safe-area-inset-bottom));
+    background:#fff;
+    border-left:1px solid #e3eaf1;
+    box-shadow:-18px 0 50px #102d5033;
+  }
+  .mobile-panel-primary{display:grid;gap:3px}
+  .mobile-panel-primary>a{
+    min-height:46px;
+    display:flex;
+    align-items:center;
+    padding:0 12px;
+    border:0;
+    border-radius:9px;
+    color:#29445d;
+    font-size:14px;
+    font-weight:800;
+  }
+  .mobile-panel-primary>a:hover{background:#f1f6fb;color:#1673d7}
+  .mobile-panel-actions{display:grid;gap:8px;margin-top:auto;padding-top:18px}
+  .mobile-panel-actions>a{
+    min-height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    border-radius:10px;
+    font-size:13px;
+    font-weight:900;
+  }
+  .mobile-panel-post{background:#102d50;color:#fff}
+  .mobile-panel-account{border:1px solid #dce7ef;background:#f7fafc;color:#245274}
+  .demo-banner{padding:7px 0;font-size:8px}
+}
+
+/* Global content gutters and touch-friendly controls. */
+@media(max-width:900px){
+  .shell{width:calc(100% - 32px)}
+}
+@media(max-width:760px){
+  .shell{width:calc(100% - 24px)}
+  :where(input:not([type=range]),select,textarea){font-size:16px!important}
+  :where(.button,.share-button,.small-action,.mobile-filter-button,.save-search-button,.report-link,.compare-page-cta){min-height:44px}
+  :where(.dashboard-search button,.sidebar-apply,.room-options button){min-height:44px}
+}
+@media(max-width:380px){
+  .shell{width:calc(100% - 16px)}
+}
+
+/* Home/catalog: avoid cramped desktop controls and give map/cards real phone space. */
+@media(max-width:760px){
+  .dashboard-page{padding-bottom:34px}
+  .dashboard-intro{display:block;padding:18px 0 12px}
+  .dashboard-intro h1{font-size:clamp(24px,8vw,31px);line-height:1.13}
+  .dashboard-intro p{font-size:12px;line-height:1.6}
+  .dashboard-search{
+    height:auto;
+    min-height:50px;
+    padding:6px 6px 6px 12px;
+    border-radius:11px;
+  }
+  .dashboard-search button{min-width:44px;padding:0 12px}
+  .map-panel{padding:7px;border-radius:12px}
+  .map-topbar{height:auto;min-height:42px;flex-wrap:wrap;padding:4px}
+  .map-topbar>div{min-width:0}
+  .map-tab{padding:8px;font-size:10px}
+  .map-wrapper{height:clamp(300px,55dvh,410px);min-height:300px}
+  .map-caption{align-items:flex-start;line-height:1.4}
+  .dashboard-section-title{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:8px;
+    margin-top:22px;
+  }
+  .dashboard-section-title>div{min-width:0}
+  .dashboard-section-title h2{font-size:20px}
+  .dashboard-section-title p{font-size:11px;line-height:1.45}
+  .listings-actions{
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    gap:7px;
+  }
+  .listings-actions .save-search-button,
+  .listings-actions .mobile-filter-button{
+    flex:1 1 auto;
+    justify-content:center;
+  }
+  .select-wrap{min-width:0}
+  .select-wrap select{max-width:100%}
+  .catalog-filter-chips{overflow-x:auto;flex-wrap:nowrap!important;padding-bottom:4px;scrollbar-width:none}
+  .catalog-filter-chips::-webkit-scrollbar{display:none}
+  .catalog-filter-chip{flex:none}
+  .dashboard-end{align-items:flex-start}
+  .home-card:hover,.district-card:hover,.recommendation-card:hover{transform:none}
+}
+@media(max-width:520px){
+  .home-card{border-radius:12px}
+  .home-card-image{height:clamp(190px,52vw,235px)}
+  .home-card-info{padding:13px}
+  .card-price{font-size:18px}
+  .home-card h3{font-size:13px;line-height:1.35}
+  .card-address{font-size:10px}
+  .card-bottom{font-size:10px}
+  .card-match{font-size:10px}
+  .card-source-link{min-height:42px;font-size:10px}
+  .recommendation-card{
+    display:block;
+  }
+  .recommendation-cover{height:190px;min-height:0}
+  .recommendation-body{padding:12px}
+  .recommendation-title{font-size:13px}
+  .recommendation-actions button{min-height:40px;font-size:10px}
+}
+
+/* Filters become a real mobile sheet instead of a narrow fixed desktop sidebar. */
+@media(max-width:760px){
+  .dashboard-sidebar{
+    inset:0!important;
+    width:min(430px,100vw);
+    max-width:100vw;
+    height:100dvh;
+    max-height:100dvh!important;
+    padding:calc(18px + env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom));
+    border:0;
+    border-radius:0;
+    box-shadow:20vw 0 0 80vw #071b3980;
+    overscroll-behavior:contain;
+  }
+  .sidebar-heading{
+    position:sticky;
+    top:calc(-18px - env(safe-area-inset-top));
+    z-index:3;
+    margin:calc(-18px - env(safe-area-inset-top)) -16px 16px;
+    padding:calc(16px + env(safe-area-inset-top)) 16px 12px;
+    background:#fff;
+    border-bottom:1px solid #e8eef4;
+  }
+  .sidebar-heading h2{font-size:18px}
+  .sidebar-label{font-size:13px}
+  .preferences-sidebar input[type=number],.preferences-sidebar select{height:46px}
+  .priority-slider>span,.family-grid label{font-size:12px}
+  .sidebar-apply{height:48px;font-size:13px}
+}
+
+/* Detail page: actions wrap, gallery scales, score moves below content cleanly. */
+@media(max-width:900px){
+  .detail-layout{gap:16px}
+}
+@media(max-width:760px){
+  .detail-page{padding-top:14px}
+  .detail-top{align-items:flex-start;gap:10px;flex-direction:column}
+  .detail-top-right{
+    width:100%;
+    gap:6px;
+    overflow-x:auto;
+    padding-bottom:4px;
+    scrollbar-width:none;
+  }
+  .detail-top-right::-webkit-scrollbar{display:none}
+  .detail-top-right .share-button{
+    flex:none;
+    min-height:40px;
+    padding:0 10px;
+    border:1px solid #dce6ef;
+    border-radius:8px;
+    background:#fff;
+    font-size:10px;
+  }
+  .detail-heading{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin:18px 0}
+  .detail-heading h1{font-size:clamp(27px,9vw,39px);margin:8px 0 9px}
+  .detail-heading p{font-size:12px;line-height:1.45}
+  .detail-heading-price{text-align:left;white-space:normal;margin:0}
+  .detail-heading-price b{font-size:27px}
+  .gallery{height:clamp(270px,68vw,390px)}
+  .detail-layout{display:flex;flex-direction:column;margin-top:20px}
+  .detail-content{width:100%;padding:0 18px;border-radius:12px}
+  .detail-aside{width:100%;display:grid;grid-template-columns:1fr;gap:10px}
+  .score-panel,.aside-note{width:100%}
+  .detail-section{padding:25px 0}
+  .detail-section h2{font-size:22px;line-height:1.2}
+  .description,.section-intro{font-size:12px;line-height:1.65}
+  .spec-grid,.infra-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spec-grid>div,.infra-grid>div{min-width:0}
+  .project{align-items:flex-start}
+  .source-card{min-width:0}
+  .finance-tools{gap:14px}
+}
+@media(max-width:480px){
+  .detail-content{padding:0 13px}
+  .gallery{height:260px;border-radius:10px}
+  .gallery-arrow{width:42px;height:42px}
+  .gallery-counter{left:10px;bottom:10px}
+  .spec-grid,.infra-grid{gap:6px}
+  .spec-grid>div,.infra-grid>div{padding:12px 10px}
+  .secondary-specs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .project{padding:12px}
+}
+
+/* Compare remains horizontally scrollable, but the first label column stays useful. */
+@media(max-width:760px){
+  .compare-page-toolbar{flex-wrap:wrap}
+  .compare-page-head{display:block}
+  .compare-scroll{
+    margin-left:-12px;
+    margin-right:-12px;
+    padding-left:12px;
+    padding-right:12px;
+    scroll-snap-type:x proximity;
+    -webkit-overflow-scrolling:touch;
+  }
+  .compare-matrix{grid-template-columns:112px repeat(var(--compare-count),minmax(205px,1fr))}
+  .compare-label-cell,.compare-sticky-label{
+    position:sticky;
+    left:0;
+    z-index:4;
+    box-shadow:4px 0 8px #15395d0d;
+  }
+  .compare-object-card,.compare-value-cell{scroll-snap-align:start}
+  .compare-page-note{font-size:9px}
+}
+
+/* Report: don't crush the comparison matrix into unreadable 54px cells. */
+@media(max-width:600px){
+  .report-toolbar{flex-wrap:wrap}
+  .report-header{padding:20px;border-radius:13px}
+  .report-header h1{font-size:30px}
+  .report-parameters{grid-template-columns:1fr 1fr}
+  .report-factor-table{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .report-factor-row{min-width:500px}
+  .report-section-head{align-items:flex-start;gap:6px;flex-direction:column}
+}
+
+/* Account: stop turning actions into invisible icon-only controls on phones. */
+@media(max-width:640px){
+  .account-page,.form-page{padding-top:16px;padding-bottom:38px}
+  .account-hero{
+    min-height:0;
+    padding:20px;
+    align-items:flex-start;
+    gap:18px;
+  }
+  .account-hero h1{font-size:25px}
+  .account-hero p{font-size:11px;line-height:1.55}
+  .account-avatar{width:56px;height:56px;font-size:26px;flex:none}
+  .account-heading{align-items:flex-start;gap:12px;flex-wrap:wrap;margin:26px 0 12px}
+  .account-heading h2{font-size:20px}
+  .account-heading .button{
+    width:auto!important;
+    min-width:44px;
+    padding:0 12px!important;
+    font-size:11px!important;
+  }
+  .account-item{
+    display:grid;
+    grid-template-columns:92px minmax(0,1fr);
+    gap:10px;
+    align-items:start;
+    padding:10px;
+  }
+  .account-item-image{width:92px;height:82px}
+  .account-item-copy{min-width:0}
+  .account-item-copy h3{font-size:12px!important;line-height:1.35}
+  .account-item-actions{
+    grid-column:1/-1;
+    display:flex;
+    min-width:0;
+    gap:7px;
+    border-top:1px solid #edf2f6;
+    padding-top:8px;
+  }
+  .small-action{
+    flex:1;
+    justify-content:center!important;
+    min-height:40px;
+    padding:0 8px;
+    border:1px solid #e1e9f1;
+    border-radius:7px;
+    background:#f8fbfe;
+    font-size:10px!important;
+  }
+  .small-action svg{width:15px!important}
+  .account-pro-card{grid-template-columns:40px minmax(0,1fr);padding:13px}
+  .account-pro-card>svg{display:none}
+  .demand-share-panel,.saved-searches-panel{padding:13px}
+  .demand-share-head,.saved-searches-head{grid-template-columns:38px minmax(0,1fr)}
+  .demand-share-status,.saved-searches-head>b{grid-column:2;justify-self:start}
+  .demand-share-head h2,.saved-searches-head h2{font-size:16px}
+  .demand-share-head p,.saved-searches-head p{font-size:10px}
+  .demand-share-snapshot{grid-template-columns:1fr 1fr}
+  .demand-share-snapshot span{font-size:8px}.demand-share-snapshot b{font-size:10px}
+  .demand-share-form{grid-template-columns:1fr}
+  .demand-consent b{font-size:10px}.demand-consent small{font-size:9px}
+  .demand-share-actions .button,.demand-delete{min-height:42px}
+  .saved-search-list article{grid-template-columns:34px minmax(0,1fr)}
+  .saved-search-copy h3{font-size:11px}
+  .saved-search-copy p{font-size:9px}
+  .saved-search-copy small{font-size:8px}
+  .saved-search-actions{grid-column:1/-1;width:100%}
+  .saved-search-actions button{min-height:40px;font-size:9px}
+}
+
+/* Listing/auth forms: one-column, readable labels, no iOS auto-zoom. */
+@media(max-width:760px){
+  .auth-form-side{padding:28px 18px}
+  .auth-card,.form-section{max-width:100%}
+  .listing-form{display:block}
+  .form-heading{margin-bottom:20px}
+  .form-heading h1{font-size:clamp(28px,9vw,36px);line-height:1.08}
+  .form-heading p{font-size:12px;line-height:1.6}
+  .form-section{padding:16px;border-radius:11px}
+  .form-grid,.form-fields{grid-template-columns:1fr!important}
+  .form-field{min-width:0}
+  .form-field label{font-size:12px!important}
+  .form-field input,.form-field select,.form-field textarea{width:100%;min-width:0;min-height:46px}
+  .form-submit-row{display:grid;gap:10px}
+  .form-submit-row .button{width:100%;min-height:48px}
+}
+
+/* Pro workspace: readable CRM cards instead of desktop micro-type. */
+@media(max-width:760px){
+  .pro-page{padding-top:12px;padding-bottom:40px}
+  .pro-hero{padding:20px;border-radius:13px}
+  .pro-hero h1{font-size:30px}
+  .pro-hero p{font-size:11px}
+  .pro-hero-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pro-hero-metrics small{font-size:8px}
+  .pro-tabs{
+    margin-left:-12px;
+    margin-right:-12px;
+    padding:5px 12px;
+    border-left:0;
+    border-right:0;
+    border-radius:0;
+    scroll-snap-type:x proximity;
+  }
+  .pro-tabs button{min-height:42px;font-size:10px;scroll-snap-align:start}
+  .pro-workspace{padding:13px}
+  .pro-section-head{align-items:flex-start;flex-direction:column}
+  .pro-section-head h2{font-size:20px}
+  .pro-section-head p{font-size:10px}
+  .pro-crm-controls{grid-template-columns:1fr}
+  .pro-property-select,.pro-stage-filter{font-size:10px}
+  .pro-property-select select,.pro-stage-filter select{height:46px}
+  .pro-lead-card{
+    grid-template-columns:36px minmax(0,1fr);
+    gap:10px;
+    padding:11px;
+  }
+  .pro-lead-main>p{font-size:10px;line-height:1.45}
+  .pro-lead-main>small,.pro-lead-tags span,.pro-match-reasons span{font-size:8px}
+  .pro-lead-contact{
+    grid-column:1/-1;
+    padding:10px 0 0;
+    border-left:0;
+    border-top:1px solid #e7edf3;
+  }
+  .lead-stage-select{font-size:9px}
+  .lead-stage-select select{height:42px;font-size:16px}
+  .pro-promotion-list article{align-items:flex-start;flex-direction:column}
+  .promotion-actions{width:100%;text-align:left}
+  .promotion-actions button{min-height:42px}
+  .developer-demo-metrics,.analytics-summary,.analytics-columns{grid-template-columns:1fr}
+  .developer-feature-grid{grid-template-columns:1fr}
+}
+
+/* District explorer and misc dense blocks. */
+@media(max-width:620px){
+  .district-explorer-toolbar{align-items:flex-start;flex-wrap:wrap}
+  .district-explorer-head{padding:19px}
+  .district-explorer-head h1{font-size:29px}
+  .district-explorer-head p{font-size:11px}
+  .district-explorer-summary{grid-template-columns:1fr 1fr}
+  .district-affordability{padding:13px}
+  .district-affordability-copy p{font-size:10px}
+  .district-affordability-controls input,.district-affordability-controls select{height:44px}
+  .district-explorer-controls>label{width:100%;justify-content:space-between}
+  .district-explorer-controls .select-wrap{flex:1}
+  .district-explorer-controls .select-wrap select{width:100%;height:44px}
+  .district-explorer-card{padding:14px}
+  .district-metrics{grid-template-columns:1fr 1fr}
+}
+
+/* Footer and overlays respect safe areas. */
+@media(max-width:520px){
+  .site-footer{padding:26px 0 calc(26px + env(safe-area-inset-bottom))}
+  .footer-inner{display:grid;gap:18px}
+  .footer-right{margin:0}
+  .compare-tray{
+    right:8px;
+    bottom:calc(8px + env(safe-area-inset-bottom));
+    width:calc(100vw - 16px);
+    max-height:min(72dvh,560px);
+    overflow:auto;
+  }
+}
+
+/* Phone landscape should not trap the user inside oversized overlays. */
+@media(max-height:520px) and (orientation:landscape){
+  .mobile-panel{width:min(420px,74vw)}
+  .dashboard-sidebar{width:min(430px,76vw);max-width:76vw}
+  .map-wrapper{height:72dvh}
+}
+
+/* Accessibility/performance: respect users who ask for less motion. */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+  }
+}
+
+
+/* Keyboard/focus states kept visible after the mobile pass. */
+:where(a,button,input,select,textarea):focus-visible{
+  outline:3px solid #78b5ff;
+  outline-offset:2px;
+}
+:where(button,input,select,textarea):disabled{cursor:not-allowed}
+
+/* Prevent long untrusted/source text from widening layouts. */
+:where(.card-address,.source-card,.project-copy,.account-item-copy,.pro-lead-main,.saved-search-copy,.report-candidate-main){
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+
+/* Mortgage draft persistence + account history */
+.mortgage-wizard-head-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.mortgage-wizard-head-actions>button{min-height:32px;border:1px solid #dce5eb;border-radius:8px;background:#fff;color:#5d7385;padding:0 9px;font-size:7px;font-weight:900}
+.mortgage-wizard-head-actions>button:hover{background:#f5f8fa}
+
+.saved-mortgages-panel{margin:18px 0 24px;padding:17px;border:1px solid #dce7f0;border-radius:12px;background:#fff}
+.saved-mortgages-head{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:start}
+.saved-mortgages-head>span{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#edf8f3;color:#13865e}
+.saved-mortgages-head small{display:block;font-size:7px;font-weight:800;letter-spacing:.9px;color:#4a8a70}
+.saved-mortgages-head h2{margin:3px 0 4px;font-size:15px;color:#213f5d}
+.saved-mortgages-head p{margin:0;color:#7c90a3;font-size:8px;line-height:1.5}
+.saved-mortgages-head>b{padding:7px 9px;border-radius:999px;background:#edf7f3;color:#0b9463;font-size:8px}
+.saved-mortgage-list{display:grid;gap:8px;margin-top:13px}
+.saved-mortgage-list article{display:grid;grid-template-columns:minmax(0,1fr) minmax(170px,.45fr) 32px;gap:12px;align-items:center;padding:11px 12px;border:1px solid #e3ebf2;border-radius:9px;background:#fbfcfe}
+.saved-mortgage-main,.saved-mortgage-payment{min-width:0}
+.saved-mortgage-main>span{display:block;font-size:6.8px;font-weight:900;letter-spacing:.7px;color:#14855d;text-transform:uppercase}
+.saved-mortgage-main h3{margin:3px 0;color:#294864;font-size:11px}
+.saved-mortgage-main p{margin:0;color:#71869a;font-size:8px;line-height:1.4}
+.saved-mortgage-payment{text-align:right}
+.saved-mortgage-payment span,.saved-mortgage-payment b,.saved-mortgage-payment small{display:block}
+.saved-mortgage-payment span{color:#8a9cab;font-size:6.5px}
+.saved-mortgage-payment b{margin-top:3px;color:#183f31;font-size:10px}
+.saved-mortgage-payment small{margin-top:3px;color:#92a1ad;font-size:6.5px}
+.saved-mortgage-list article>button{display:grid;place-items:center;width:32px;height:32px;border:1px solid #eadede;border-radius:7px;background:#fffafa;color:#a45e5e}
+.saved-mortgage-empty{margin-top:12px;padding:13px;border-radius:8px;background:#f7fafc;color:#7e91a4;font-size:8px;line-height:1.5}
+@media(max-width:640px){
+  .mortgage-wizard-head-actions{width:100%;justify-content:flex-start}
+  .mortgage-wizard-head-actions>button{min-height:40px;font-size:9px}
+  .saved-mortgages-panel{padding:13px}
+  .saved-mortgages-head{grid-template-columns:38px minmax(0,1fr)}
+  .saved-mortgages-head>b{grid-column:2;justify-self:start}
+  .saved-mortgages-head h2{font-size:16px}.saved-mortgages-head p{font-size:10px}
+  .saved-mortgage-list article{grid-template-columns:minmax(0,1fr) 36px}
+  .saved-mortgage-payment{grid-column:1;text-align:left}
+  .saved-mortgage-list article>button{grid-column:2;grid-row:1/3;width:36px;height:36px}
+  .saved-mortgage-main h3{font-size:12px}.saved-mortgage-main p{font-size:9px}.saved-mortgage-payment b{font-size:11px}.saved-mortgage-payment small{font-size:8px}
+}
+
+.selected-photos .photo-manage { display:flex; gap:4px; height:auto; overflow:visible; }
+.selected-photos .photo-manage button { position:static; width:auto; height:auto; padding:6px; font-size:12px; }
+
+.selected-photos > .managed-photo { width:150px; height:auto; }
+.selected-photos > .managed-photo img { height:100px; }
+.selected-photos > .managed-photo > span { position:static; display:block; padding:3px; }
+
+/* Rent / buy verdict and assumptions remain readable within the existing finance card. */
+.rent-buy-summary{font-size:12px;line-height:1.5;color:#647b90;margin:8px 0 14px}
+.rent-buy-calculator .rent-buy-difference{flex-wrap:wrap;gap:6px;padding:14px}
+.rent-buy-calculator .rent-buy-difference span{font-size:11px}
+.rent-buy-calculator .rent-buy-difference b{font-size:15px;line-height:1.5}
+.rent-buy-calculator .rent-buy-core-fields label>span,.rent-buy-calculator .rent-buy-assumptions label>span{font-size:11px}
+.rent-buy-calculator .rent-buy-core-fields input,.rent-buy-calculator .rent-buy-core-fields select,.rent-buy-calculator .rent-buy-assumptions input{font-size:13px}
+.rent-buy-calculator .rent-buy-column p,.rent-buy-calculator .rent-buy-note,.rent-buy-calculator .rent-buy-warning{font-size:11px;line-height:1.6}
+.rent-buy-calculator .rent-buy-column>small,.rent-buy-calculator .rent-buy-assumptions small{font-size:10px}
+.rent-buy-calculator .rent-buy-advanced-toggle{font-size:12px}
+.poi-dot.parking{background:#64748b}
+.commute-estimate{font-size:12px;color:#365e85;margin:8px 0}

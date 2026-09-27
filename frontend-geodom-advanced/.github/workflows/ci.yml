@@ -1,0 +1,54 @@
+name: frontend-ci
+
+on:
+  pull_request:
+    branches: [develop, main]
+  push:
+    branches: [develop, main]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm run size:check
+      - name: Validate production Compose
+        shell: bash
+        env:
+          VITE_API_URL: https://api.example.test
+          VITE_YANDEX_MAPS_API_KEY: ci-browser-key
+        run: docker compose -f docker-compose.prod.yml config >/dev/null
+      - run: docker build -t geodom-frontend:ci .
+      - name: Smoke test production container
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker run -d --name geodom-frontend-ci -p 18080:80 geodom-frontend:ci
+          trap 'docker rm -f geodom-frontend-ci >/dev/null 2>&1 || true' EXIT
+
+          for attempt in {1..20}; do
+            if curl -fsS http://127.0.0.1:18080/healthz >/dev/null; then
+              break
+            fi
+            if [ "$attempt" -eq 20 ]; then
+              docker logs geodom-frontend-ci
+              exit 1
+            fi
+            sleep 1
+          done
+
+          curl -fsS http://127.0.0.1:18080/ | grep -q '<div id="root"></div>'
+          curl -fsS http://127.0.0.1:18080/compare | grep -q '<div id="root"></div>'
+          curl -fsS http://127.0.0.1:18080/apartments/smoke-route | grep -q '<div id="root"></div>'
+
+          headers="$(curl -fsSI http://127.0.0.1:18080/)"
+          grep -qi '^X-Content-Type-Options: nosniff' <<<"$headers"
+          grep -qi '^X-Frame-Options: SAMEORIGIN' <<<"$headers"
+          grep -qi '^Referrer-Policy: strict-origin-when-cross-origin' <<<"$headers"

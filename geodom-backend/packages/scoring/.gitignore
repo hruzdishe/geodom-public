@@ -1,0 +1,37 @@
+# Runtime data, generated exports and archives
+data/
+raw/
+processed/
+media/
+exports/
+verification/
+*.parquet
+*.jsonl
+*.geojson
+*.zip
+*.bin
+*.jpg
+*.jpeg
+*.png
+*.webp
+# Environments and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-*/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

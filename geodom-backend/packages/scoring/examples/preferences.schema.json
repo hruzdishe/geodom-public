@@ -1,0 +1,128 @@
+{
+  "$defs": {
+    "WorkLocation": {
+      "additionalProperties": false,
+      "properties": {
+        "lat": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Lon",
+          "type": "number"
+        },
+        "max_minutes": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 1440,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Minutes"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ],
+      "title": "WorkLocation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "price_min": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Price Min"
+    },
+    "price_max": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Price Max"
+    },
+    "rooms": {
+      "items": {
+        "maximum": 20,
+        "minimum": 0,
+        "type": "integer"
+      },
+      "title": "Rooms",
+      "type": "array"
+    },
+    "districts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Districts",
+      "type": "array"
+    },
+    "offer_type": {
+      "default": "sale",
+      "enum": [
+        "sale",
+        "rent"
+      ],
+      "title": "Offer Type",
+      "type": "string"
+    },
+    "children_age_groups": {
+      "items": {
+        "enum": [
+          "preschool",
+          "school"
+        ],
+        "type": "string"
+      },
+      "title": "Children Age Groups",
+      "type": "array"
+    },
+    "priorities": {
+      "additionalProperties": {
+        "maximum": 5,
+        "minimum": 0,
+        "type": "integer"
+      },
+      "title": "Priorities",
+      "type": "object"
+    },
+    "work": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/WorkLocation"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "title": "Preferences",
+  "type": "object"
+}

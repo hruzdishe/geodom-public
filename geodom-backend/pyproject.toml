@@ -1,0 +1,51 @@
+[project]
+name = "geodom-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hruzdishe", email = "misazanov723@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "asyncpg>=0.31.0",
+    "clickhouse-connect>=1.9.0",
+    "fastapi>=0.141.1",
+    "greenlet>=3.2.0",
+    "httpx>=0.28.1",
+    "krasnoyarsk-ml",
+    "minio>=7.2.20",
+    "pillow>=12.3.0",
+    "pwdlib[argon2]>=0.3.1",
+    "pyarrow>=21,<24",
+    "pydantic-settings>=2.15.0",
+    "python-multipart>=0.0.32",
+    "sqlalchemy>=2.1.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+geodom-backend = "geodom_backend:main"
+geodom-import-housing = "geodom_backend.imports.housing.cli:main"
+geodom-import-features = "geodom_backend.imports.features.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.16.9",
+]
+
+[tool.uv.workspace]
+members = [
+    "packages/scoring",
+]
+
+[tool.uv.sources]
+krasnoyarsk-ml = { workspace = true }

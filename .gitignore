@@ -1,0 +1,26 @@
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+!.env.production.example
+!.env.test
+
+# Dependencies and generated files
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+*.tsbuildinfo
+.DS_Store
+
+# Uploaded media, backups and source archives
+media/
+*.zip
+*.dump
+*.backup

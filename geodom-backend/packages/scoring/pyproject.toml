@@ -1,0 +1,42 @@
+[project]
+name = "krasnoyarsk-ml"
+version = "0.1.0"
+description = "Reproducible OSM data layer for Krasnoyarsk housing recommendations"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "httpx>=0.28,<0.29",
+    "pydantic-settings>=2.10,<3",
+    "pyarrow>=21,<24",
+    "tzdata>=2025.2",
+    "shapely>=2.1,<3",
+    "pyproj>=3.7,<4",
+    "beautifulsoup4>=4.15.0",
+    "pillow>=12.3.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/krasnoyarsk_ml"]
+
+[project.scripts]
+ml-data = "krasnoyarsk_ml.pipeline:main"
+ml-addresses = "krasnoyarsk_ml.addresses:main"
+ml-housing = "krasnoyarsk_ml.housing.collector:main"
+ml-housing-export = "krasnoyarsk_ml.housing.export:main"
+ml-features = "krasnoyarsk_ml.features:main"
+ml-recommend = "krasnoyarsk_ml.scoring:main"
+ml-districts = "krasnoyarsk_ml.districts:main"
+ml-district-environment = "krasnoyarsk_ml.district_environment:main"
+ml-district-export = "krasnoyarsk_ml.district_export:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

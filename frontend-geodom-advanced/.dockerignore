@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.github
+.idea
+.vscode
+coverage
+*.log
+.env
+.env.local
+local-data
+public/media/*
+!public/media/README.md

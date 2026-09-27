@@ -1,0 +1,6 @@
+{
+  "assumed_car_speed_kmh": 30,
+  "commute_tolerance_fraction": 0.15,
+  "work_half_score_distance_m": 5000,
+  "half_score_distances_m": {}
+}

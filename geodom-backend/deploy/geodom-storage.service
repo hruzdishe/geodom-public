@@ -1,0 +1,22 @@
+[Unit]
+Description=GeoDom S3 storage (PGSTY SILO, MinIO community fork)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=geodom-storage
+Group=geodom-storage
+EnvironmentFile=/etc/geodom/storage.env
+Environment=GOMEMLIMIT=384MiB
+ExecStart=/usr/local/bin/silo server /var/lib/geodom-storage --address :9000 --console-address 127.0.0.1:9001
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65536
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target
